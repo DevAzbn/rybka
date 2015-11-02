@@ -1,0 +1,91 @@
+	.about-main-text {
+		background-position:center center;
+		background-repeat: repeat;
+		background-image: url('@{url-path-img}/tpl/about-main-text-bg.png');
+		padding:10em 0;
+		
+		.title {
+			width:100%;
+			max-width:670px;
+			margin:0 auto;
+			text-align:center;
+			font-family:abi;
+			#site.size(3.6em);
+			#site.color(@c-hex-about-main-text-title-color);
+			
+			.venzel {
+				margin:1em 0 2em;
+			}
+		}
+		
+		.gallery {
+			
+			.item {
+				position:relative;
+				min-height:708px;
+				
+				&:nth-child(1) {
+					.gal-image {
+						&:nth-child(1) {
+							left:0;
+							top:0;
+						}
+						&:nth-child(2) {
+							left:0;
+							bottom:0;
+						}
+					}
+				}
+				&:nth-child(2) {
+					.gal-image {
+						&:nth-child(1) {
+							left:0;
+							bottom:0;
+						}
+					}
+				}
+				&:nth-child(3) {
+					.gal-image {
+						&:nth-child(1) {
+							right:0;
+							bottom:0;
+						}
+					}
+				}
+				
+				.gal-image {
+					position:absolute;
+					background-position:center center;
+				}
+				
+				.text {
+					display:block;
+					max-width:435px;
+					width:100%;
+					margin:0 auto;
+					text-align:center;
+					#site.size(1.6em);
+					#site.color(@c-hex-about-main-text-text-color);
+					line-height:1.8em;
+					margin-top:-0.9em;
+				}
+				
+				.more {
+					margin:2em 0;
+					a {
+						display:block;
+						max-width:270px;
+						padding:1.7em 0;
+						border:2px @c-hex-offer-item-short-marker-color solid;
+						#site.color(@c-hex-offer-item-short-marker-color);
+						#site.size(1.4em);
+						#site.uppercase();
+						font-family:gb;
+						margin:0 auto 0;
+						text-align:center;
+					}
+				}
+				
+			}
+		}
+	}

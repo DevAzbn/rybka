@@ -1,0 +1,71 @@
+	.rest-welcome {
+		overflow-x: hidden;
+		background-position:center center;
+		background-repeat: repeat;
+		background-image: url('@{url-path-img}/tpl/about-main-text-bg.png');
+		padding:9em 0;
+		
+		.title {
+			width:100%;
+			max-width:670px;
+			margin:0 auto;
+			text-align:center;
+			font-family:abi;
+			#site.size(3.6em);
+			#site.color(@c-hex-about-main-text-title-color);
+			
+			&.small {
+				#site.size(1em);
+				line-height: 5em;
+			}
+			
+			.venzel {
+				margin:1em 0 2em;
+			}
+		}
+		
+		.welcome-container {
+			position:relative;
+			
+			&:before {
+				content:'';
+				position:absolute;
+				right:90%;
+				bottom:-120px;
+				width:439px;
+				height:648px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-image: url('@{url-path-img}/tpl/rest-welcome-before-bg.png');
+			}
+			&:after {
+				content:'';
+				position:absolute;
+				left:90%;
+				bottom:-210px;
+				width:496px;
+				height:792px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-image: url('@{url-path-img}/tpl/rest-welcome-after-bg.png');
+			}
+			
+			.text {
+				max-width:676px;
+				width:100%;
+				margin:0em auto;
+				line-height:1.3em;
+				#site.size(1.8em);
+				#site.color(@c-hex-rest-welcome-container-text-color);
+				text-align:center;
+				
+				.hello {
+					#site.size(1.3em);
+					font-family:gb;
+					margin-bottom:1.5em;
+				}
+			}
+			
+		}
+		
+	}

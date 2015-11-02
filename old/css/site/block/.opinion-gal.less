@@ -1,0 +1,91 @@
+	.opinion-gal {
+		overflow-x: hidden;
+		background-position:center center;
+		background-repeat: repeat;
+		background-image: url('@{url-path-img}/tpl/about-main-text-bg.png');
+		padding:9em 0;
+		
+		.gal-container {
+			position:relative;
+			
+			&:before {
+				content:'';
+				position:absolute;
+				right:102%;
+				bottom:0;
+				width:290px;
+				height:474px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-image: url('@{url-path-img}/tpl/opinion-gal-before-bg.png');
+			}
+			&:after {
+				content:'';
+				position:absolute;
+				left:102%;
+				bottom:0;
+				width:295px;
+				height:355px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-image: url('@{url-path-img}/tpl/opinion-gal-after-bg.png');
+			}
+			
+			.opinion-gal-btn {
+				position:absolute;
+				height:100%;
+				top:0;
+				width:2em;
+				
+				&.left {
+					left:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-left.png');
+				}
+				
+				&.right {
+					right:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-right.png');
+				}
+			}
+			
+		}
+		
+		.gallery {
+			
+			.item-list {
+			
+			}
+			
+			.item {
+				
+				.image {
+					background-image:url('@{url-path-img}/tpl/opinion-gal-item-img.png');
+					background-position:center center;
+					background-size: contain;
+					height:376px;
+					display:block;
+					margin:0 auto;
+				}
+				.title {
+					#site.color(@c-hex-opinion-gal-item-title-color);
+					#site.size(1.6em);
+					font-family:gb;
+					text-align:center;
+					
+				}
+			}
+			
+			.arrow-btn {
+				.left {
+				
+				}
+				.right {
+				
+				}
+			}
+			
+		}
+		
+	}

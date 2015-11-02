@@ -1,0 +1,36 @@
+.on-hover:hover {
+	&.scale-picture {
+		& > .picture {
+			-ms-transform:scale(1.2);
+			-moz-transform:scale(1.2);
+			-o-transform:scale(1.2);
+			-webkit-transform:scale(1.2);
+			transform:scale(1.2);
+		}
+	}
+	&.movehorizarrow {
+		&.left > .picture {
+			-ms-transform:translateX(-50%);
+			-moz-transform:translateX(-50%);
+			-o-transform:translateX(-50%);
+			-webkit-transform:translateX(-50%);
+			transform:translateX(-50%);
+		}
+		&.right > .picture {
+			-ms-transform:translateX(50%);
+			-moz-transform:translateX(50%);
+			-o-transform:translateX(50%);
+			-webkit-transform:translateX(50%);
+			transform:translateX(50%);
+		}
+	}
+}
+
+.to-left {
+	float:left;
+	width:33%;
+}
+.to-right {
+	float:right;
+	width:66%;
+}
