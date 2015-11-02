@@ -1,15 +1,9 @@
 .fecss {
 	
-	/*
-	background-image: url("@{site-base-url}/bg.png");
-	*/
-	
 	@import "fe-dbg.less";
 	
-	/*
 	.include-custom-font();
 	font-family:Arial, sans-serif, Georgia;
-	*/
 	position:relative;
 	.mp0;
 	
@@ -18,27 +12,16 @@
 		.mp0;
 	}
 	
-	.clear {
-		clear:both;
-		
-		&:after {
-			content:'';
-			clear:both;
-		}
-	}
+	@import "block/.clear/main.less";
+	@import "block/.adaptive-block/main.less";
+	@import "block/.fluid-block/main.less";
 	
-	.adaptive-block {
-		display:table;
-		clear:both;
-	}
-	.fluid-block {
-		display:table;
-		width:100%;
-		clear:both;
-		
-		@import "grid/by_width.less";
-	}
+	@import "block/.top-fixed/main.less";
+	@import "block/.arrow-slider/main.less";
 	
+	@import "block/.filelist/main.less";
+	
+	@import "block/.can-close/main.less";
 	
 	@import "grid/main.less";
 	@import "grid/12.less";
