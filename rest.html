@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>FE CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--
+<meta name="document-state" content="Dynamic" />
+<meta name="resource-type" content="document" />
+-->
+
+<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<link type="image/x-icon" href="/favicon.ico" rel="icon" />
+
+<link href="/css/site.css?update=201511050936" rel="stylesheet">
+<!--
+<link rel="stylesheet/less" type="text/css" href="/css/site.less?update=201509210901" />
+<script src="/js/less.min.js"></script>
+-->
+
+<!--
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>
+-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="/js/jquery.min.js" ></script>
+<script src="/js/fecss.js" ></script>
+<script src="/js/storage.js" ></script>
+
+<script src="/js/jquery-plugin/jquery.jqfeScrollTo.js" ></script>
+
+<!--
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+-->
+
+<script src="/js/js.js" ></script>
+<script src="/js/document-ready.js" ></script>
+
+</head>
+<body class="fecss full-height " >
+	
+	<div class="full-screen active semi-dark page-loader " >
+		<div class="at-center" >
+			<div class="middle" >
+				<!--<img src="img/helper/ajax-loader@2x.gif" />-->
+				<div class="process-container" ><div class="process-level" ></div>идет загрузка...</div>
+				<a class="close-loader" href="#not-lazyload" >не ждать</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="full-screen site-menu " >
+		<div class="at-center" >
+			<div class="top" >
+				
+				<div class="fluid-block " >
+					<div class="adaptive-block margin-center grid grid-12" >
+						<div class="grid-row" >
+							
+							<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+								
+								<div class="menu-header" >
+									<div class="phones" >
+										<div class="align-right " >+7 (499) 321-26-46</div>
+										<div class="align-right " >+7 (499) 409-46-26</div>
+									</div>
+									<div class="logo" >
+										<img src="img/tpl/top-menu-logo.png" />
+									</div>
+									<div class="adr" >
+										<strong>Москва</strong>, Шмитовский проезд,<br />
+										д. 18А, стр. 1
+									</div>
+									
+									<a href="#close" class="close-btn zi zi-top on-hover scale-picture " ></a>
+								</div>
+								
+							</div>
+							
+							<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+								
+								<ul >
+									<li ><a class="category active" href="/about.html" >О клубе</a></li>
+									<li ><a class="category " href="/info.html" >Информация</a></li>
+									<li ><a href="/info.html" >Новости</a></li>
+									<li ><a href="/info.html" >Статьи</a></li>
+									<li ><a href="/info.html" >Акции</a></li>
+									<li ><a class="category " href="/razm.html" >Размещение</a></li>
+									<li ><a class="category " href="/rest.html" >Ресторан</a></li>
+									<!--
+									<li ><a class="category " href="" >Услуги</a></li>
+									<li ><a href="" >Рыбалка</a></li>
+									<li ><a href="" >Охота</a></li>
+									<li ><a href="" >Отдых</a></li>
+									-->
+									<li ><a class="category " href="/opinion.html" >Отзывы</a></li>
+									<li ><a class="category " href="/contact.html" >Контакты</a></li>
+								</ul>
+								
+							</div>
+							
+							<div class="clear" ></div>
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<a class="mouse-fixed pos fix zi zi-top scrollto" rel="nofollow" href=".about-main-text" ></a>
+	
+	<div class="pos fix top-menu zi zi-top on-scroll" >
+		
+		<div class="fluid-block " >
+			<div class="adaptive-block margin-center grid grid-12" >
+				<div class="grid-row" >
+					
+					<div class="clmn-6 clmn-xs-6 clmn-sm-6 clmn-md-6 clmn-lg-6 " >
+						<div class="to-left left" >
+							<a href="#menu" class="menu-btn zi zi-top on-hover scale-picture" ><span class="picture" ></span> Меню</a>
+						</div>
+					</div>
+					<div class="clmn-6 clmn-xs-6 clmn-sm-6 clmn-md-6 clmn-lg-6 " >
+						<div class="to-right right" >
+							<div class="phone-block" >
+								<a href="tel:+74993212646" class="phone" >+7 (499) 321-26-46</a>
+								<br />
+								<a href="tel:+74994094626" class="phone" >+7 (499) 409-46-26</a>
+							</div>
+							<a href="/contact.html" class="contact-btn zi zi-top on-hover scale-picture" ><span class="picture" ></span></a>
+						</div>
+					</div>
+					
+					<div class="clear" ></div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="logo-block zi zi-minus" ></div>
+		
+	</div>
+	
+	<div class="fluid-block top-img-block static-img info2-page pos rel " >
+		
+		<div class="img-block pos abs " >
+			<div class="item active tmp tmp0015" ></div>
+		</div>
+		
+		<div class="adaptive-block margin-center grid grid-12" >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 top-slider" >
+					&nbsp;
+				</div>
+				
+				<div class="clear" ></div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="info-block pos abs " >
+			<div class="title" >Ресторан</div>
+			<div class="path-line" >Главная &rarr; О клубе &rarr; Ресторан</div>
+		</div>
+		
+	</div>
+	
+	<div class="fluid-block rest-welcome" >
+		<div class="adaptive-block margin-center grid grid-12" >
+			
+			<div class="grid-row " >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 welcome-container" >
+					
+					<div class="title " >Кто сыт,<br />тот Богом не забыт</div>
+					<div class="title small " >Русская народная поговорка</div>
+					<div class="title " ><img class="venzel " src="img/tpl/about-main-text-title-venzel.png" /></div>
+					
+					<div class="text " >
+						<div class="hello " >Добро пожаловать в ресторан «Золотая Рыбка»</div>
+						
+						На первом этаже расположены бар и просторный зал на 102 места (17 столов).
+						На втором этаже находится уютный зал на 20 мест (5 столиков) и лаунж с кальян–баром. К услугам наших гостей: караоке, спутниковое телевидение, 12 футовый русский бильярд, настольный теннис и дартс.
+						Мы всячески стремимся к тому, чтобы наши гости были сыты, потому что сытые люди – добрые люди.
+					</div>
+					
+				</div>
+				
+				<div class="clear" ></div>
+					
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="fluid-block top-img-block slider pos rel " >
+		
+		<div class="img-block pos abs " >
+			<div class="item tmp tmp0016 " ></div>
+			<div class="item tmp tmp0016 " ></div>
+			<div class="item tmp tmp0016 " ></div>
+			<div class="item tmp tmp0016 " ></div>
+			<div class="item tmp tmp0016 " ></div>
+		</div>
+		
+		<div class="adaptive-block margin-center grid grid-12" >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 top-slider" >
+					&nbsp;
+				</div>
+				
+				<div class="clear" ></div>
+				
+			</div>
+		</div>
+		
+		<div class="arrow-block pos abs " >
+			<a href="#left" class="s-arrow on-hover movehorizarrow left" ><span class="picture" ></span></a>
+			<a href="#right" class="s-arrow on-hover movehorizarrow right" ><span class="picture" ></span></a>
+		</div>
+	</div>
+	
+	<div class="fluid-block page-header rest-menu" >
+		<div class="block-container" >
+			<div class="white-block" >
+				
+				<div class="adaptive-block margin-center grid grid-12" >
+					<div class="grid-row " >
+						
+						<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 at-center " >
+							<div class="title" >Мы предлагаем</div>
+							
+							<!--
+							<a href="#" class="t-arrow left hover-scale" ></a>
+							<a href="#" class="t-arrow right hover-scale" ></a>
+							-->
+						</div>
+						
+						<div class="clear" ></div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="wbig-container" >
+			
+			<div class="adaptive-block margin-center grid grid-12 menu-select" >
+				<div class="grid-row" >
+					
+					<a href="rest.html" class="clmn-6 clmn-xs-6 clmn-sm-6 clmn-md-6 clmn-lg-6 item chief hover-scale active" >
+						<div class="picture" ></div>
+						<div class="text" >
+							<div class="title" >Блюда от шеф-повара</div>
+							<div class="preview" >Также приготовим ужин или обед<br />из трофеев, которые добыл гость</div>
+						</div>
+					</a>
+					
+					<a  href="rest2.html" class="clmn-6 clmn-xs-6 clmn-sm-6 clmn-md-6 clmn-lg-6 item desk hover-scale" >
+						<div class="picture" ></div>
+						<div class="text" >
+							<div class="title" >Комплексное меню</div>
+							<div class="preview" >Недельное меню, вкусное и питательное</div>
+						</div>
+					</a>
+					
+					<div class="clear" ></div>
+					
+				</div>
+			</div>
+			
+			
+			<div class="adaptive-block margin-center grid grid-12 menu-list" >
+				
+				<div class="grid-row" >					
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Завтраки <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0021 hover-scale " ></div>
+					</a>
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Холодные закуски <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0022 hover-scale " ></div>
+					</a>
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Салаты <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0023 hover-scale " ></div>
+					</a>
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Первые блюда <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0024 hover-scale " ></div>
+					</a>
+					
+					<div class="clear" ></div>
+					
+				</div>
+				
+				<div class="grid-row" >					
+					
+					<a href="rest.html" class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 hot-fish-food " >
+						
+					</a>
+					
+					<div class="clear" ></div>
+					
+				</div>
+				
+				<div class="grid-row" >					
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Завтраки <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0021 hover-scale " ></div>
+					</a>
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Холодные закуски <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0022 hover-scale " ></div>
+					</a>
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Салаты <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0023 hover-scale " ></div>
+					</a>
+					
+					<a href="rest.html" class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item " >
+						<div class="title" >
+							<div class="cell" >Первые блюда <img src="img/tpl/menu-list-venzel.png" class="venzel" /></div>
+						</div>
+						<div class="image tmp tmp0024 hover-scale " ></div>
+					</a>
+					
+					<div class="clear" ></div>
+					
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		
+		<div class="clear" ></div>
+	</div>
+	
+	<div class="fluid-block top-img-block static-img h500 rest-barb pos rel " >
+		
+		<div class="img-block pos abs " >
+			<div class="item active tmp tmp0017" ></div>
+		</div>
+		
+		<div class="adaptive-block margin-center grid grid-12" >
+			<div class="grid-row" >
+				
+				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 top-slider" >
+					&nbsp;
+				</div>
+				
+				<div class="clear" ></div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="at-center " >
+			<div class="middle " >
+				<div class="text" >В зоне барбекю Вы можете собственноручно приготовить еду из добытых Вами трофеев</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="fluid-block bottom-menu tmp" >
+		<div class="adaptive-block margin-center grid grid-12" >
+			
+			<div class="grid-row link-block " >
+				
+				<div class="clmn-1 clmn-xs-1 clmn-sm-1 clmn-md-1 clmn-lg-1 " >
+					<img class="img resp" src="img/tpl/link-block-logo.png" />
+				</div>
+				<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 where" >
+					<div class="name" >ООО «Золотая Рыбка»</div>
+					<div class="adr" >Москва, Шмитовский проезд, д. 18А, стр. 1</div>
+					<div class="phones" >
+						<div class="phone" >+7 (499) 321 26 46</div>
+						<div class="phone" >+7 (499) 409 46 26</div>
+					</div>
+					<div class="social grid-row " >
+						<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 " ><a class="social-btn vk hover-scale" href="http://vk.com/" ></a></div>
+						<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 " ><a class="social-btn fb hover-scale" href="http://facebook.com/" ></a></div>
+						<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 " ><a class="social-btn inst hover-scale" href="http://instagram.com/" ></a></div>
+						<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 " ><a class="social-btn ok hover-scale" href="http://odnoklassniki.ru/" ></a></div>
+					</div>
+				</div>
+				<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 menu-col" >
+					<div class="title" >Клуб отдыха</div>
+					<div class="item" ><a href="/about.html" >О клубе</a></div>
+					<div class="item" ><a href="/info.html" >Информация</a></div>
+					<div class="item" ><a href="/razm.html" >Размещение</a></div>
+					<div class="item" ><a href="/rest.html" >Ресторан</a></div>
+					<!--<div class="item" ><a href="#" >Услуги</a></div>-->
+					<div class="item" ><a href="/opinion.html" >Отзывы</a></div>
+					<div class="item" ><a href="/contact.html" >Контакты</a></div>
+				</div>
+				<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 menu-col" >
+					<div class="title" >Туристическая компания</div>
+					<!--
+					<div class="item" ><a href="#" >О компании</a></div>
+					<div class="item" ><a href="#" >Информация</a></div>
+					<div class="item" ><a href="#" >Услуги</a></div>
+					<div class="item" ><a href="#" >Визы</a></div>
+					<div class="item" ><a href="#" >Авиа и Ж/д билеты</a></div>
+					-->
+					<div class="item" ><a href="/contact.html" >Контакты</a></div>
+				</div>
+				<div class="clmn-1 clmn-xs-1 clmn-sm-1 clmn-md-1 clmn-lg-1 align-right" >
+					<a href="#top-menu" class="scrolltotop scrollto-btn hover-scale " ></a>
+				</div>
+				
+				<div class="clear" ></div>
+				
+			</div>
+			
+			<div class="clear" ></div>
+			
+		</div>
+	</div>
+	
+	<div class="fluid-block copy-block" >
+		<div class="adaptive-block margin-center grid grid-12" >
+			<div class="grid-row" >
+				
+				<div class="clmn-6 clmn-xs-12 clmn-sm-6 clmn-md-6 clmn-lg-6 copy" >© 2015. Все права защищены.</div>
+				<div class="clmn-6 clmn-xs-12 clmn-sm-6 clmn-md-6 clmn-lg-6 align-right" ><a href="http://dorohovdesign.ru/" class="dorohov hover-scale" ></a></div>
+				
+				<div class="clear" ></div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="full-height" >&nbsp;</div>
+
+</body>
+</html>
