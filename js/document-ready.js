@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-	var h = $(window).height();
-
-	(function(){
-		$('.about-page .top-slider').height(h);
-	})();
-
 	$(document.body).on('click.fecss', '.scrolltotop', function(event){
 		event.preventDefault();
 		$('body').eq(0).jqfeScrollTo({diff:0,speed:777});
@@ -130,7 +124,7 @@ $(document).ready(function() {
 	
 	$('.scrollto').on('click', function(event){
 		event.preventDefault();
-		$($(this).attr('href').eq(0)).jqfeScrollTo({diff:0,speed:777});
+		$($(this).attr('href')).eq(0).jqfeScrollTo({diff:0,speed:777});
 	});
 	
 	$('.go-to-top').on('click', function(event){
@@ -286,6 +280,14 @@ $(window).on('resize',function(event){
 		}
 	);
 	
+	
+	$(
+	function(){
+		var h = $(window).height();
+		$('.imaged-block.full-screen-image').height(h);
+		console.log(h);
+	}
+);
 	
 }).trigger('resize');
 

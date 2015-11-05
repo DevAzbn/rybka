@@ -1,7 +1,7 @@
 	
 	$('.scrollto').on('click', function(event){
 		event.preventDefault();
-		$($(this).attr('href').eq(0)).jqfeScrollTo({diff:0,speed:777});
+		$($(this).attr('href')).eq(0).jqfeScrollTo({diff:0,speed:777});
 	});
 	
 	$('.go-to-top').on('click', function(event){

@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-	var h = $(window).height();
-
-	(function(){
-		$('.about-page .top-slider').height(h);
-	})();
-
 	$(document.body).on('click.fecss', '.scrolltotop', function(event){
 		event.preventDefault();
 		$('body').eq(0).jqfeScrollTo({diff:0,speed:777});
@@ -113,6 +107,8 @@ $(document).ready(function() {
 $(window).on('resize',function(event){
 	
 	[snp tpl="block/fecss/block/.fecss/.window-resize.js" ]
+	
+	[snp tpl="block/site/block/.imaged-block.full-screen-image/.window-resize.js" ]
 	
 }).trigger('resize');
 
