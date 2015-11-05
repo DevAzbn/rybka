@@ -1,0 +1,64 @@
+.imaged-block {
+	
+	.title-block {
+		
+		&.bottom-44 {
+			top:initial !important;
+			height:initial !important;
+		}
+		
+		&.semi-height {
+			top:33%;
+		}
+		
+		.title, .preview, .date, .venzel {
+			#site.color(@c-hex-w);
+			text-align:center;
+		}
+		
+		.title {
+			#site.size(7.2em);
+			#site.uppercase();
+		}
+		.preview {
+			margin-top:1.5em;
+			#site.size(1.4em);
+		}
+		.date {
+			
+		}
+		.venzel {
+			margin-top:44px;
+			height:30px;
+			width:100%;
+			background-position:center center;
+			background-image: url('@{url-path-img}/tpl/top-img-block-venzel.png');
+		}
+	}
+	
+	&.without-control {
+		
+		.arrow-block {
+			display:none;
+		}
+		
+	}
+	&.without-title-date {
+		
+		.title-block {
+			.date {
+				display:none;
+			}
+		}
+		
+	}
+	
+	&.without-title {
+		
+		.title-block {
+			display:none;
+		}
+		
+	}
+	
+}

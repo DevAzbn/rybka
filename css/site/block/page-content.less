@@ -1,0 +1,53 @@
+	.page-content {
+		padding:6.5em 0em;
+		
+		.text-block {
+			#site.color(@c-hex-page-content-text-color);
+			#site.size(1.6em);
+			font-weight: 400;
+			line-height: 1.5em;
+			padding-right:2.3em;
+		}
+		.cost-block {
+			
+			.bordered {
+				border:2px @c-hex-page-content-cost-border solid;
+				padding:4em;
+			}
+			.mb {
+				margin-bottom:30px;
+			}
+			.title {
+				#site.color(@c-hex-page-content-title-color);
+				#site.size(2.4em);
+				font-family:gb;
+				line-height: 1em;
+				text-align:center;
+				#site.uppercase();
+			}
+			.cost-title {
+				#site.color(@c-hex-page-content-title-color);
+				#site.size(1.7em);
+				font-weight: 400;
+				line-height: 1.5em;
+			}
+			.cost-value {
+				#site.color(@c-hex-page-content-value-color);
+				#site.size(2.4em);
+				font-family:gb;
+				line-height: 1em;
+				text-align:right;
+			}
+			
+			.more-cost-info {
+				text-align:center;
+				margin-top:3em;
+				
+				a {
+					#site.underline();
+					#site.size(1.4em);
+					#site.color(@c-hex-page-content-more-cost-color);
+				}
+			}
+		}
+	}

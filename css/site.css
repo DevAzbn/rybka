@@ -1322,7 +1322,6 @@ body {
   font-size: 10px;
   font-family: gr;
 }
-/* все, кроме главной */
 .site-menu {
   background-position: center center;
   background-color: rgba(46, 61, 70, 0.97);
@@ -2513,6 +2512,35 @@ body {
   margin: 0 auto 0;
   text-align: center;
 }
+.about-main-text .types .short {
+  color: #a4821c;
+  font-size: 2em;
+  font-family: gb;
+  line-height: 1.5em;
+  text-align: center;
+}
+.about-main-text .types .list .item {
+  padding: 0 2em;
+}
+.about-main-text .types .list .item .image.resp.margin-center {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.about-main-text .types .list .item .for {
+  font-size: 1.6em;
+  color: #a4821c;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-family: gb;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.about-main-text .types .list .item .preview {
+  font-size: 1.6em;
+  color: #a4821c;
+  line-height: 1.5em;
+  text-align: center;
+}
 .opinion-gal {
   overflow-x: hidden;
   background-position: center center;
@@ -2955,7 +2983,6 @@ body {
   bottom: 0;
   right: 0;
 }
-/* все, кроме главной */
 .bottom-menu {
   color: #fbe79b;
   background: url('../img/tpl/bottom-menu-bg-right.png') right center no-repeat, url('../img/tpl/bottom-menu-bg-left.png') left center no-repeat #5d3d00;

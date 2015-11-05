@@ -1,0 +1,101 @@
+	.page-options {
+		
+		.icon-table {
+			display:table;
+			width:100%;
+			padding:2em 0em;
+			border-top:1px @c-hex-page-options-button-color solid;
+			border-bottom:1px @c-hex-page-options-button-color solid;
+			
+			& > .item {
+				display:table-cell;
+				height:100%;
+				
+				&.icon {
+					
+					background-position:left center;
+					width:10.5%;
+					opacity:0.4;
+					position:relative;
+					
+					-ms-transition:opacity @trans-speed ease;
+					-moz-transition:opacity @trans-speed ease;
+					-o-transition:opacity @trans-speed ease;
+					-webkit-transition:opacity @trans-speed ease;
+					transition:opacity @trans-speed ease;
+					
+					&:hover {
+						opacity:1;
+						
+						& > .popover {
+							display:block;
+						}
+					}
+					
+					& > .popover {
+						position:absolute;
+						min-width:200px;
+						text-align:center;
+						left:0;
+						bottom:4em;
+						display:none;
+						padding:1.5em 2em;
+						margin-left:-70%;
+						#site.bg(@c-rgb-page-options-popover-bg);
+						#site.color(@c-hex-w);
+						#site.size(1.6em);
+						
+						&:after {
+							content:'';
+							position:absolute;
+							bottom:-10px;
+							width:10%;
+							height:0px;
+							left:45%;
+							/*#site.bg(@c-rgb-page-options-popover-bg);*/
+							border-top:10px @c-rgb-page-options-popover-bg solid;
+							border-left:10px transparent solid;
+							border-right:10px transparent solid;
+						}
+					}
+					
+					&.bed {
+						background-image: url('@{url-path-img}/tpl/page-options-bed.png');
+					}
+					&.tv {
+						background-image: url('@{url-path-img}/tpl/page-options-tv.png');
+					}
+					&.micro {
+						background-image: url('@{url-path-img}/tpl/page-options-micro.png');
+					}
+					&.fen {
+						background-image: url('@{url-path-img}/tpl/page-options-fen.png');
+					}
+					&.child {
+						background-image: url('@{url-path-img}/tpl/page-options-child.png');
+					}
+					&.holod {
+						background-image: url('@{url-path-img}/tpl/page-options-holod.png');
+					}
+					&.stoyan {
+						background-image: url('@{url-path-img}/tpl/page-options-stoyan.png');
+					}
+					&.kond {
+						background-image: url('@{url-path-img}/tpl/page-options-kond.png');
+					}
+				}
+				&.button {
+					width:16%;
+					
+					a {
+						display:block;
+						padding:1em 2.25em;
+						text-align:center;
+						border:1px @c-hex-page-options-button-color solid;
+						#site.color(@c-hex-page-options-button-color);
+						#site.size(1.6em);
+					}
+				}
+			}
+		}
+	}
