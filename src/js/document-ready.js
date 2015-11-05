@@ -92,23 +92,23 @@ $(document).ready(function() {
 	});
 
 
-[snp tpl="block/fecss/block/.fecss/.document-ready.js" ]
+[snp tpl="src/block/fecss/_fecss/.document-ready.js" ]
 
-[snp tpl="block/fecss/block/.page-loader/.document-ready.js" ]
+[snp tpl="src/block/fecss/_page-loader/.document-ready.js" ]
 
-[snp tpl="block/fecss/block/.scrollto/.document-ready.js" ]
+[snp tpl="src/block/fecss/_scrollto/.document-ready.js" ]
 
-[snp tpl="block/fecss/block/.arrow-slider/.document-ready.js" ]
+[snp tpl="src/block/fecss/_arrow-slider/.document-ready.js" ]
 
-[snp tpl="block/fecss/block/.can-close/.document-ready.js" ]
+[snp tpl="src/block/fecss/_can-close/.document-ready.js" ]
 
 
 
 $(window).on('resize',function(event){
 	
-	[snp tpl="block/fecss/block/.fecss/.window-resize.js" ]
+	[snp tpl="src/block/fecss/_fecss/.window-resize.js" ]
 	
-	[snp tpl="block/site/block/.imaged-block.full-screen-image/.window-resize.js" ]
+	[snp tpl="src/block/site/_imaged-block_full-screen-image/.window-resize.js" ]
 	
 }).trigger('resize');
 
