@@ -102,6 +102,8 @@ $(document).ready(function() {
 
 [snp tpl="src/block/fecss/_can-close/.document-ready.js" ]
 
+[snp tpl="src/block/site/_mainpage-container/.document-ready.js" ]
+
 
 
 $(window).on('resize',function(event){
