@@ -1,0 +1,74 @@
+	.tur-middle-content {
+		background-position:center center;
+		background-repeat:repeat;
+		background-image: url('@{url-path-img}/tpl/adr-block-bg.png');
+		
+		.wbig-container {
+			#site.bg(@c-hex-w);
+			width:100%;
+			max-width:1300px;
+			margin:0em auto 0 auto;
+		}
+		
+		.welcome-container {
+			margin:5em 0;
+			
+			.title {
+				width:100%;
+				max-width:550px;
+				margin:0 auto;
+				text-align:center;
+				font-family:abi;
+				#site.size(3.6em);
+				#site.color(@c-hex-about-main-text-title-color);
+				
+				.venzel {
+					margin:1em 0;
+				}
+			}
+		}
+		
+		.tur-preim {
+			#site.color(@c-hex-page-options-button-color);
+			#site.size(1.6em);
+			text-align:center;
+			
+			.short {
+				#site.uppercase();
+				#site.bold();
+				margin:2em 2em;
+			}
+			.more {
+				margin:0 2em;
+			}
+			
+		}
+		
+		.big-gray-title {
+			.text {
+				#site.size(7em);
+				#site.color(rgba(153, 153, 153, 0.2));
+				#site.bold();
+				#site.uppercase();
+				font-family:gb;
+				text-align:center;
+				width:100%;;
+				max-width:1100px;
+				margin:2em auto 1.5em;
+				line-height:0.9em;
+			}
+		}
+		
+		.small-gray-text {
+			.text {
+				#site.size(1.8em);
+				#site.color(@c-hex-page-options-button-color);
+				text-align:center;
+				width:100%;
+				max-width:850px;
+				margin:2em auto 5em;
+				line-height:1.8em;
+			}
+		}
+		
+	}
