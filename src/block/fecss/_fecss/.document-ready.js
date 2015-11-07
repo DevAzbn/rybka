@@ -1,3 +1,7 @@
+
+/*
+start .fecss document-ready
+*/
 	
 	$(
 		function() {
@@ -15,4 +19,7 @@
 			$('body.fecss').eq(0).addClass(res);
 		}
 	);
-	
+
+/*
+end .fecss document-ready
+*/

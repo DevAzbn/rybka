@@ -1,4 +1,8 @@
-	
+
+/*
+start .fecss window-resize
+*/
+
 	$(
 		function() {
 			var size = {
@@ -41,4 +45,7 @@
 			$('body.fecss').eq(0).addClass(cl);
 		}
 	);
-	
+
+/*
+end .fecss window-resize
+*/

@@ -420,7 +420,7 @@ section {
   outline: 1px #000000 solid;
   padding: 0.5em;
   -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
 .fecss .btn:hover {
   color: #ffffff;
@@ -543,9 +543,7 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+          transition: transform 1s ease;
 }
 .fecss .arrow-slider.mod.without-points .arrow-block .point-line {
   display: none;
@@ -1033,9 +1031,7 @@ html body .fecss .full-height {
 }
 .fecss .hover-scale {
   -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+          transition: transform 1s ease;
 }
 .fecss .hover-scale:hover {
   display: inline-block;
@@ -1095,7 +1091,7 @@ html body .fecss .full-height {
 }
 .fecss .full-screen.page-loader {
   -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+          transition: all 0.7s ease;
   opacity: 0;
   height: 0%;
 }
@@ -1146,7 +1142,7 @@ html body .fecss .full-height {
   background-color: #999999;
   color: rgba(0, 0, 0, 0.75);
   -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
 .fecss .full-screen.page-loader .close-loader:hover {
   background-color: #ffffff;
@@ -1208,7 +1204,7 @@ html body .fecss .full-height {
   background-image: url('../img/fecss/go-to-top.png');
   text-decoration: none;
   -webkit-transition: all 0.999s ease;
-  transition: all 0.999s ease;
+          transition: all 0.999s ease;
 }
 .fecss .go-to-top.active {
   width: 65px;
@@ -1632,9 +1628,7 @@ body {
 .top-img-block.slider .arrow-block .s-arrow > .picture {
   background-position: center center;
   -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
   transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 .top-img-block.static-img {
   height: 480px;
