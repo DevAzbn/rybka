@@ -29,6 +29,8 @@ $(window).on('resize',function(event){
 (function(){
 	//Сохраняем ссылку на стандартный метод jQuery
 	var originalAddClassMethod = jQuery.fn.addClass;
+	var originalRemoveClassMethod = jQuery.fn.removeClass;
+	var originalToggleClassMethod = jQuery.fn.toggleClass;
 	//Переопределяем
 	$.fn.addClass = function(){
 		var result = originalAddClassMethod.apply(this, arguments);
@@ -36,10 +38,38 @@ $(window).on('resize',function(event){
 		$(this).trigger('changeClass');
 		return result;
 	}
+	$.fn.removeClass = function(){
+		var result = originalRemoveClassMethod.apply(this, arguments);
+		//Инициализируем событие смены класса
+		$(this).trigger('changeClass');
+		return result;
+	}
+	$.fn.toggleClass = function(){
+		var result = originalToggleClassMethod.apply(this, arguments);
+		//Инициализируем событие смены класса
+		$(this).trigger('changeClass');
+		return result;
+	}
 })();
 
 $(document).ready(function() {
-
+	
+	var h = $(window).height();
+	
+	(function(){
+		$('.about-page .top-slider').height(h);
+	})();
+	
+	$(document.body).on('click.fecss', '.scrolltotop', function(event){
+		event.preventDefault();
+		$('body').eq(0).jqfeScrollTo({diff:0,speed:777});
+	});
+	
+	$(document.body).on('click.fecss', '.site-menu .close-btn', function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$(this).parents('.site-menu').removeClass('active');
+	});
 
 [snp tpl="src/_/concat.document-ready.js" ]
 
