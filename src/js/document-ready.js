@@ -26,6 +26,18 @@ $(window).on('resize',function(event){
 
 */
 
+(function(){
+	//Сохраняем ссылку на стандартный метод jQuery
+	var originalAddClassMethod = jQuery.fn.addClass;
+	//Переопределяем
+	$.fn.addClass = function(){
+		var result = originalAddClassMethod.apply(this, arguments);
+		//Инициализируем событие смены класса
+		$(this).trigger('changeClass');
+		return result;
+	}
+})();
+
 $(document).ready(function() {
 
 
@@ -48,6 +60,15 @@ $(window).on('scroll',function(){
 	
 
 }).trigger('scroll');
+
+
+$('body').on('changeClass',function(){
+
+	
+	[snp tpl="src/_/concat.body.changeClass.js" ]
+	
+
+});
 
 
 });
