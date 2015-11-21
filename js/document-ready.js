@@ -147,7 +147,7 @@ $(".line-gallery").each(function(e){event.preventDefault();var i=$(this);i.on("c
 $(".page-loader .close-loader").on("click",function(e){e.preventDefault(),$(".page-loader").removeClass("active")}),$(window).load(function(e){$(".page-loader").removeClass("active")});
 $(".scrollto").on("click",function(e){e.preventDefault(),$($(this).attr("href")).eq(0).jqfeScrollTo({diff:0,speed:777})});
 $(function(){$(document.body).on("click.size",".show-menu-btn",function(n){var i=($(".mainpage-container:visible"),$(".mainpage-container.container-menu"));i.slideDown("fast").css({display:"table"})}),$(document.body).on("click.size",".hide-menu-btn",function(n){var i=($(".mainpage-container:visible"),$(".mainpage-container.container-menu"));i.slideUp("fast")})});
-$(document.body).on("click",".top-menu .menu-btn",function(n){$(".site-menu").addClass("active")});
+$(document.body).on("click",".opinion-form .btn-field a",function(n){alert("send!")});
 
 
 $(window).on('resize',function(event){

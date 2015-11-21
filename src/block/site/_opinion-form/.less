@@ -1,0 +1,74 @@
+	.opinion-form {
+		margin:4em 0em;
+		
+		.with-margin {
+			margin:0 20em 0 10em;
+		}
+		
+		.form-field {
+			
+			input, textarea {
+				width:100%;
+				display:block;
+				#site.size(1.6em);
+				#site.color(#cbcbcb);
+				padding:1em;
+				border:1px #ecbc2d solid;
+				
+				&:focus {
+					border:1px #ecbc2d solid;
+					outline:none;
+				}
+			}
+			textarea {
+				width:100%;
+				display:block;
+				border-top:none;
+				min-height:8em;
+			}
+			
+			&.title-field {
+				margin-bottom:2em;
+				
+				span {
+					#site.size(2.4em);
+					#site.bold();
+					#site.color(#edbd30);
+					font-family:gb;
+				}
+			}
+			
+			&.email-field {
+				input {
+					border-left:none;
+				}
+			}
+			
+			&.btn-field {
+				margin-top:3em;
+				
+				input[type="submit"] {
+					-ms-appearance: none;
+					-moz-appearance: none;
+					-o-appearance: none;
+					-webkit-appearance: none;
+					appearance: none;
+					display:block;
+					height:3.75em;
+					width:100%;
+					max-width:210px;
+					border:none;
+					outline:none;
+					cursor:pointer;
+					font-family:gb;
+					#site.bg(@c-hex-page-order-submit-bg);
+					#site.color(@c-hex-w);
+					#site.uppercase();
+					#site.size(1.4em);
+					margin:0 0 0 auto;
+				}
+			}
+			
+		}
+		
+	}

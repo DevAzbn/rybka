@@ -3,33 +3,36 @@
 		background-position:center center;
 		background-repeat: repeat;
 		background-image: url('@{url-path-img}/tpl/about-main-text-bg.png');
+		position:relative;
 		padding:9em 0;
+		
+		&:before {
+			content:'';
+			position:absolute;
+			left:0;
+			bottom:0;
+			width:290px;
+			height:474px;
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-image: url('@{url-path-img}/tpl/opinion-gal-before-bg.png');
+		}
+		&:after {
+			content:'';
+			position:absolute;
+			right:0;
+			bottom:0;
+			width:295px;
+			height:355px;
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-image: url('@{url-path-img}/tpl/opinion-gal-after-bg.png');
+		}
 		
 		.gal-container {
 			position:relative;
 			
-			&:before {
-				content:'';
-				position:absolute;
-				right:102%;
-				bottom:0;
-				width:290px;
-				height:474px;
-				background-position:center center;
-				background-repeat:no-repeat;
-				background-image: url('@{url-path-img}/tpl/opinion-gal-before-bg.png');
-			}
-			&:after {
-				content:'';
-				position:absolute;
-				left:102%;
-				bottom:0;
-				width:295px;
-				height:355px;
-				background-position:center center;
-				background-repeat:no-repeat;
-				background-image: url('@{url-path-img}/tpl/opinion-gal-after-bg.png');
-			}
+			
 			
 			.opinion-gal-btn {
 				position:absolute;

@@ -1,3 +1,3 @@
-	$(document.body).on('click', '.top-menu .menu-btn', function(event){
-		$('.site-menu').addClass('active');
+	$(document.body).on('click', '.opinion-form .btn-field a', function(event){
+		alert('send!');
 	});

@@ -24,6 +24,32 @@
 			transform:translateX(50%);
 		}
 	}
+	
+	&.by-color {
+		transition:all @trans-speed ease;
+		
+		.w2o {
+			#site.color(@c-hex-page-order-submit-bg);
+			#site.bg(@c-hex-w);
+			
+			&:hover {
+				display:inline-block;
+				#site.color(@c-hex-w);
+				#site.bg(@c-hex-page-order-submit-bg);
+			}
+		}
+		
+		.o2w {
+			#site.bg(@c-hex-page-order-submit-bg);
+			#site.color(@c-hex-w);
+			
+			&:hover {
+				display:inline-block;
+				#site.bg(@c-hex-w);
+				#site.color(@c-hex-page-order-submit-bg);
+			}
+		}
+	}
 }
 
 .to-left {
@@ -40,11 +66,20 @@
 .h {
 	height:0px;
 }
+.h210 {
+	height:210px;
+}
+.h360 {
+	height:360px;
+}
 .h375 {
 	height:375px;
 }
 .h380 {
 	height:380px;
+}
+.h450 {
+	height:450px;
 }
 .h480 {
 	height:480px;
