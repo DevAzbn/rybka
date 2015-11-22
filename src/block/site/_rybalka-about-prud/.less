@@ -1,0 +1,55 @@
+.rybalka-about-prud {
+	background-position:center center;
+	background-repeat:repeat;
+	background-image: url('@{url-path-img}/tpl/rybalka-about-prud-bg.png');
+	
+	.adaptive-block {
+		padding:8em 0 4em;
+		#site.bg(@c-hex-w);
+	}
+	
+	.fish-gal {
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-image: url('@{url-path-img}/tpl/fish-gal-bg.png');
+		margin:12em 0;
+		padding-top:6em;
+		
+		.item-list {
+			.item {
+				.title {
+					#site.size(2em);
+					#site.color(#999999);
+					text-align:center;
+					margin-top:2em;
+				}
+			}
+		}
+		
+		.gal-container {
+			position:relative;
+			
+			.fish-gal-btn {
+				position:absolute;
+				height:100%;
+				top:0;
+				width:2em;
+				
+				&.left {
+					left:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-left.png');
+				}
+				
+				&.right {
+					right:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-right.png');
+				}
+			}
+			
+		}
+		
+	}
+	
+}

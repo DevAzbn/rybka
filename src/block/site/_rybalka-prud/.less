@@ -11,4 +11,34 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-image: url('@{url-path-img}/tpl/rybalka-prud-bg.jpg');
+	#site.bg(@c-hex-b);
+	
+	.list-in-prud {
+		margin:30em auto;
+	}
+	
+	.rybalka-prud-photo-btns {
+		padding:8em 0;
+		text-align:center;
+		
+		a {
+			#site.color(#337ea3);
+			#site.size(1.6em);
+			border:1px #337ea3 solid;
+			padding:1em 2em;
+			margin:0 2em;
+			
+			&.active, &:hover {
+				#site.color(@c-hex-w);
+				border:1px @c-hex-w solid;
+			}
+		}
+	}
+}
+.rybalka.slider {
+	.img-block {
+		.item {
+			background-size: cover;
+		}
+	}
 }

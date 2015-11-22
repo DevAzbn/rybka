@@ -21,6 +21,23 @@
 			background-image:url('@{url-path-img}/tpl/mainpage-container-tur-bg.jpg');
 		}
 		
+		&:before {
+			#site.bg(rgba(0,0,0,0.5));
+			content:'';
+			width:100%;
+			height:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:0;
+		}
+		
+		&:hover {
+			&:before {
+				#site.bg(rgba(0,0,0,0.2));
+			}
+		}
+		
 		.title {
 			#site.size(4.8em);
 			#site.color(@c-hex-mp-img-title-color);
@@ -30,6 +47,10 @@
 			width:100%;
 			max-width:500px;
 			margin:0 auto 0.5em;
+			display:block;
+			text-align:center;
+			z-index:1;
+			position:relative;
 		}
 		.preview {
 			#site.size(1.8em);
@@ -40,6 +61,8 @@
 			width:100%;
 			max-width:500px;
 			margin:0 auto;
+			z-index:1;
+			position:relative;
 		}
 		
 	}
@@ -49,6 +72,7 @@
 		left:4em;
 		bottom:4em;
 		#site.color(@c-hex-w);
+		z-index:1;
 		
 		.adr {
 			display:inline-block;
@@ -204,6 +228,166 @@
 				#site.underline();
 			}
 		}
+	}
+	
+}
+.modal-block-container {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	#site.bg(rgba(0, 0, 0, 0.5));
+	display:none;
+	z-index:-10;
+	
+	&.active {
+		display:block;
+		z-index:200;
+	}
+	
+	.modal-block {
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		
+		.white-container {
+			#site.bg(@c-hex-w);
+			padding:5em;
+			position:relative;
+			
+			.hide-modal {
+				position:absolute;
+				right:2em;
+				top:2em;
+				width:15px;
+				height:15px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-image: url('@{url-path-img}/tpl/hide-modal.png');
+			}
+		}
+		
+		.item {
+			display:none;
+			
+			&.active {
+				display:block;
+			}
+		}
+		
+		.modal-btn {
+			position:absolute;
+			top:5em;
+			width:20px;
+			height:40px;
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			
+			&.prev-item-btn {
+				left:5em;
+				background-image: url('@{url-path-img}/tpl/modal-prev-item-btn.png');
+			}
+			&.next-item-btn {
+				right:5em;
+				background-image: url('@{url-path-img}/tpl/modal-next-item-btn.png');
+			}
+		}
+		
+		.modal-title {
+			margin-bottom:4em;
+			
+			.text {
+				text-align:center;
+				font-family:abi;
+				#site.size(4em);
+				#site.italic();
+				#site.bold();
+				#site.color(#ecbd2d);
+			}
+		}
+	}
+}
+	
+
+.ohota-photos {
+	margin:4em 0 2em;
+	
+	.rybalka-prud-photo-btns {
+		padding:8em 0;
+		text-align:center;
+		
+		a {
+			#site.color(#cdcdcd);
+			#site.size(1.6em);
+			border:1px #cdcdcd solid;
+			padding:1em 2em;
+			margin:0 2em;
+			
+			&.active, &:hover {
+				#site.color(#ecbc2d);
+				border:1px #ecbc2d solid;
+			}
+		}
+	}
+}
+.ohota-sezon {
+	background-position:center center;
+	background-repeat:repeat;
+	background-image: url('@{url-path-img}/tpl/rybalka-about-prud-bg.png');
+	
+	.adaptive-block {
+		padding:8em 0 4em;
+		#site.bg(@c-hex-w);
+	}
+	
+	.fish-gal {
+		/*
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-image: url('@{url-path-img}/tpl/fish-gal-bg.png');
+		padding-top:6em;
+		*/
+		margin:12em 0;
+		
+		.item-list {
+			.item {
+				.title {
+					#site.size(2em);
+					#site.color(#999999);
+					text-align:center;
+					margin-top:2em;
+				}
+			}
+		}
+		
+		.gal-container {
+			position:relative;
+			
+			.fish-gal-btn {
+				position:absolute;
+				height:100%;
+				top:0;
+				width:2em;
+				
+				&.left {
+					left:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-left.png');
+				}
+				
+				&.right {
+					right:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-right.png');
+				}
+			}
+			
+		}
+		
 	}
 	
 }
@@ -757,6 +941,61 @@
 	}
 	
 }
+.rybalka-about-prud {
+	background-position:center center;
+	background-repeat:repeat;
+	background-image: url('@{url-path-img}/tpl/rybalka-about-prud-bg.png');
+	
+	.adaptive-block {
+		padding:8em 0 4em;
+		#site.bg(@c-hex-w);
+	}
+	
+	.fish-gal {
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-image: url('@{url-path-img}/tpl/fish-gal-bg.png');
+		margin:12em 0;
+		padding-top:6em;
+		
+		.item-list {
+			.item {
+				.title {
+					#site.size(2em);
+					#site.color(#999999);
+					text-align:center;
+					margin-top:2em;
+				}
+			}
+		}
+		
+		.gal-container {
+			position:relative;
+			
+			.fish-gal-btn {
+				position:absolute;
+				height:100%;
+				top:0;
+				width:2em;
+				
+				&.left {
+					left:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-left.png');
+				}
+				
+				&.right {
+					right:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-right.png');
+				}
+			}
+			
+		}
+		
+	}
+	
+}
 .rybalka-prud-top {
 	background-position:center bottom;
 	background-repeat:no-repeat;
@@ -770,6 +1009,36 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-image: url('@{url-path-img}/tpl/rybalka-prud-bg.jpg');
+	#site.bg(@c-hex-b);
+	
+	.list-in-prud {
+		margin:30em auto;
+	}
+	
+	.rybalka-prud-photo-btns {
+		padding:8em 0;
+		text-align:center;
+		
+		a {
+			#site.color(#337ea3);
+			#site.size(1.6em);
+			border:1px #337ea3 solid;
+			padding:1em 2em;
+			margin:0 2em;
+			
+			&.active, &:hover {
+				#site.color(@c-hex-w);
+				border:1px @c-hex-w solid;
+			}
+		}
+	}
+}
+.rybalka.slider {
+	.img-block {
+		.item {
+			background-size: cover;
+		}
+	}
 }
 	.tur-middle-content {
 		background-position:center center;
