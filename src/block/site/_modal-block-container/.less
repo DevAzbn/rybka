@@ -1,5 +1,5 @@
 .modal-block-container {
-	position:fixed;
+	position:absolute;
 	left:0;
 	top:0;
 	width:100%;
@@ -16,7 +16,7 @@
 	.modal-block {
 		position:absolute;
 		left:0;
-		top:0;
+		top:100px;
 		width:100%;
 		
 		.white-container {
@@ -74,6 +74,9 @@
 				#site.italic();
 				#site.bold();
 				#site.color(#ecbd2d);
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
 			}
 		}
 	}

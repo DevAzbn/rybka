@@ -51,6 +51,15 @@
 			text-align:center;
 			z-index:1;
 			position:relative;
+			
+			&:before {
+				content:'';
+				position:absolute;
+				left:-25%;
+				top:-200%;
+				width:150%;
+				height:500%;
+			}
 		}
 		.preview {
 			#site.size(1.8em);
@@ -180,6 +189,7 @@
 		left:0;
 		width:100%;
 		height:100%;
+		z-index:2;
 		#site.bg(@c-rgb-site-menu-bg);
 		
 		.menu-item {
@@ -191,6 +201,10 @@
 		.org-item {
 			background-image:none;
 			background-color:transparent;
+			
+			&:before {
+				content:none;
+			}
 		}
 		
 		ul {
@@ -232,7 +246,7 @@
 	
 }
 .modal-block-container {
-	position:fixed;
+	position:absolute;
 	left:0;
 	top:0;
 	width:100%;
@@ -249,7 +263,7 @@
 	.modal-block {
 		position:absolute;
 		left:0;
-		top:0;
+		top:100px;
 		width:100%;
 		
 		.white-container {
@@ -307,6 +321,9 @@
 				#site.italic();
 				#site.bold();
 				#site.color(#ecbd2d);
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
 			}
 		}
 	}

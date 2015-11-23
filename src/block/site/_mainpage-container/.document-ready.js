@@ -10,5 +10,10 @@ $(
 			var menu = $('.mainpage-container.container-menu');
 			menu.slideUp('fast');
 		});
+		$(document.body).on('click.fecss', '.drd-btn', function(event){
+			event.preventDefault();
+			$(this).closest('ul').find('.drd-list').slideUp('fast');
+			$(this).next('.drd-list').slideDown('fast');
+		});
 	}
 );

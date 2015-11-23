@@ -39,6 +39,10 @@ $(document).ready(function() {
 		$('body').eq(0).jqfeScrollTo({diff:0,speed:777});
 	});
 	
+	$(document.body).on('click', '.top-menu .menu-btn', function(event){
+		$('.site-menu').addClass('active');
+	});
+	
 	$(document.body).on('click.fecss', '.site-menu .close-btn', function(event){
 		event.preventDefault();
 		event.stopPropagation();
