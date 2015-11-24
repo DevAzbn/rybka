@@ -1,0 +1,1 @@
+$(".modal-block-container .item").on("changeClass",function(){});
