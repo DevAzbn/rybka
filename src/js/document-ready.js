@@ -141,6 +141,43 @@ $(document).ready(function() {
 		})
 	});
 	
+	
+	var clMap, opMap;
+	ymaps.ready(initYandexMap);
+	
+	function initYandexMap() {
+		
+		if($('#contact-map-cl').size()) {
+			clMap = new ymaps.Map('contact-map-cl', {
+				center: [47.907757, 36.077768],
+				zoom: 13,
+			}, {
+				searchControlProvider: 'yandex#search'
+			});
+		}
+		
+		if($('#contact-map-op').size()) {
+			opMap = new ymaps.Map('contact-map-op', {
+				center: [55.757339, 37.544117],
+				zoom: 17,
+			}, {
+				searchControlProvider: 'yandex#search'
+			});
+			
+			
+			var op_office = new ymaps.Placemark([55.757339, 37.544117], { //myMap.getCenter(), {
+				hintContent: 'Золотая рыбка'
+			}, {
+				//iconLayout: 'default#image',
+				//iconImageHref: '/wp-content/themes/solnechny/img/yandex-map-icon.png',
+				//iconImageSize: [104, 115],
+				//iconImageOffset: [-52, -115]
+			});
+			opMap.geoObjects.add(op_office);
+		}
+	
+	}
+	
 
 [snp tpl="src/_/concat.document-ready.js" ]
 
