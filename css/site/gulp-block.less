@@ -613,14 +613,31 @@
 			display:block;
 			vertical-align:bottom;
 			position:relative;
+			z-index:2;
 			background-size:cover;
 			background-position:center center;
 			background-repeat:no-repeat;
+			
+			&:before {
+				content:'';
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index:1;
+				background: transparent;
+				background: -webkit-linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+				background: -o-linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+				background: -ms-linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+				background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+			}
 			
 			span {
 				display:table-row;
 				vertical-align:bottom;
 				position:absolute;
+				z-index:2;
 				left:0.8em;
 				bottom:0.8em;
 				width:10em;
@@ -648,6 +665,10 @@
 			
 			&:hover {
 				
+				&:before {
+					content:none;
+				}
+				
 				span:after {
 					#site.size(0.5em);
 					opacity:1;
@@ -656,6 +677,20 @@
 					padding:1em 2.5em;
 				}
 				
+			}
+			
+			&.no-info {
+				cursor:default;
+				
+				&:hover {
+					span:after {
+						#site.size(0em);
+						opacity:0;
+						height:0em;
+						margin-top:0em;
+						padding:0;
+					}
+				}
 			}
 			
 		}

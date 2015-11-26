@@ -2,36 +2,43 @@
 	
 	.center-content > & {
 		#site.color(@c-hex-post-content-block-social-color);
+		#site.size(1.6em);
 		
 		& > h1 {
-			#site.size(2.4em);
+			#site.size(1.5em);
 		}
 		
 		& > h2 {
-			#site.size(2.1em);
+			#site.size(1.3em);
 		}
 		
 		& > h3 {
-			#site.size(1.8em);
+			#site.size(1.2em);
 		}
 		
 		& > h4 {
-			#site.size(1.6em);
+			#site.size(1.1em);
 		}
 		
 		& > h5 {
-			#site.size(1.4em);
+			#site.size(1.0em);
 		}
 		
 		& > p {
 			display:block;
-			#site.size(1.6em);
+			
 			line-height: 1.5em;
 			margin:2em auto;
 			
 			&:first-child {
 				margin-top:0;
 			}
+		}
+		
+		& > ul {
+			display:block;
+			line-height: 1.5em;
+			margin:2em auto;
 		}
 		
 		& > img, & > p > img, & > p > a > img {
@@ -92,7 +99,6 @@
 				text-align:center;
 				vertical-align:center;
 				padding:2em 0;
-				#site.size(1.4em);
 				#site.color(#333333);
 			}
 		}

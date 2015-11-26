@@ -141,7 +141,7 @@ $(document).ready(function() {
 		})
 	});
 	
-	
+	/*
 	var clMap, opMap;
 	ymaps.ready(initYandexMap);
 	
@@ -149,7 +149,7 @@ $(document).ready(function() {
 		
 		if($('#contact-map-cl').size()) {
 			clMap = new ymaps.Map('contact-map-cl', {
-				center: [47.907757, 36.077768],
+				center: [47.883352, 46.567960],
 				zoom: 13,
 			}, {
 				searchControlProvider: 'yandex#search'
@@ -177,7 +177,7 @@ $(document).ready(function() {
 		}
 	
 	}
-	
+	*/
 
 $(".arrow-slider").each(function(i){event.preventDefault();var e=$(this),t=e.find(".img-block .item"),r=(e.find(".text-content"),e.find(".title-block"),e.find(".arrow-block")),n=r.find(".point-line");t.each(function(i){$("<a/>",{"class":"item",html:'<span class="point" ></span>',href:"#image-"+i}).on("click.arrow-slider.point",function(i){console.log("click.arrow-slider.point");var e=$(this).index();n.find(".item").removeClass("active"),t.fadeOut("fast").removeClass("active"),$(this).addClass("active"),t.eq(e).fadeIn("fast").addClass("active")}).appendTo(n)}),r.on("click.arrow-slider.right",".btn-arrow.right",function(i){var e=n.find(".item"),t=e.filter(".active").eq(0).index(),r=e.eq(t).next(".item");r.size()?r.trigger("click"):e.eq(0).trigger("click")}),r.on("click.arrow-slider.left",".btn-arrow.left",function(i){var e=n.find(".item"),t=e.filter(".active").eq(0).index(),r=e.eq(t).prev(".item");r.size()?r.trigger("click"):e.eq(-1).trigger("click")}),e.hasClass("with-timer")&&e.data("fecss-timer",setInterval(function(){e.is(":hover")||r.find(".btn-arrow.right").trigger("click")},3e3)),n.find(".item.active").size()||n.find(".item").eq(0).trigger("click")});
 $(document.body).on("click",".can-close .close-btn",function(c){c.preventDefault(),$(this).closest(".can-close").removeClass("active")});

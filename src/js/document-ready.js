@@ -141,7 +141,7 @@ $(document).ready(function() {
 		})
 	});
 	
-	
+	/*
 	var clMap, opMap;
 	ymaps.ready(initYandexMap);
 	
@@ -149,7 +149,7 @@ $(document).ready(function() {
 		
 		if($('#contact-map-cl').size()) {
 			clMap = new ymaps.Map('contact-map-cl', {
-				center: [47.907757, 36.077768],
+				center: [47.883352, 46.567960],
 				zoom: 13,
 			}, {
 				searchControlProvider: 'yandex#search'
@@ -177,7 +177,7 @@ $(document).ready(function() {
 		}
 	
 	}
-	
+	*/
 
 [snp tpl="src/_/concat.document-ready.js" ]
 
