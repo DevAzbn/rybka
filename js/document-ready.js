@@ -1,30 +1,3 @@
-/*
-
-$(document).ready(function() {
-
-src/block/fecss/_fecss/.document-ready.js
-
-src/block/fecss/_page-loader/.document-ready.js
-
-src/block/fecss/_scrollto/.document-ready.js
-
-src/block/fecss/_arrow-slider/.document-ready.js
-
-src/block/fecss/_can-close/.document-ready.js
-
-
-
-$(window).on('resize',function(event){
-	
-	block/fecss/.fecss/.window-resize.js
-	
-}).trigger('resize');
-
-
-
-});
-
-*/
 
 $(document).ready(function() {
 	
@@ -66,6 +39,25 @@ $(document).ready(function() {
 		$('.show-chief-menu').removeClass('active');
 		$('.menu-list').hide();
 		$('.menu-desk').fadeIn('fast');
+		$(this).addClass('active');
+	});
+	
+	$(document.body).on('click.fecss', '.show-africa-info', function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$('.show-spain-info').removeClass('active');
+		$('.spain-info').hide();
+		$('.africa-info').fadeIn('fast');
+		$(this).addClass('active');
+	});
+	$('.show-africa-info').eq(0).trigger('click');
+	
+	$(document.body).on('click.fecss', '.show-spain-info', function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$('.show-africa-info').removeClass('active');
+		$('.africa-info').hide();
+		$('.spain-info').fadeIn('fast');
 		$(this).addClass('active');
 	});
 	
@@ -141,9 +133,11 @@ $(document).ready(function() {
 		})
 	});
 	
-	/*
+	
 	var clMap, opMap;
-	ymaps.ready(initYandexMap);
+	if(typeof ymaps != 'undefined') {
+		ymaps.ready(initYandexMap);
+	}
 	
 	function initYandexMap() {
 		
@@ -177,7 +171,7 @@ $(document).ready(function() {
 		}
 	
 	}
-	*/
+	
 
 $(".arrow-slider").each(function(i){event.preventDefault();var e=$(this),t=e.find(".img-block .item"),r=(e.find(".text-content"),e.find(".title-block"),e.find(".arrow-block")),n=r.find(".point-line");t.each(function(i){$("<a/>",{"class":"item",html:'<span class="point" ></span>',href:"#image-"+i}).on("click.arrow-slider.point",function(i){console.log("click.arrow-slider.point");var e=$(this).index();n.find(".item").removeClass("active"),t.fadeOut("fast").removeClass("active"),$(this).addClass("active"),t.eq(e).fadeIn("fast").addClass("active")}).appendTo(n)}),r.on("click.arrow-slider.right",".btn-arrow.right",function(i){var e=n.find(".item"),t=e.filter(".active").eq(0).index(),r=e.eq(t).next(".item");r.size()?r.trigger("click"):e.eq(0).trigger("click")}),r.on("click.arrow-slider.left",".btn-arrow.left",function(i){var e=n.find(".item"),t=e.filter(".active").eq(0).index(),r=e.eq(t).prev(".item");r.size()?r.trigger("click"):e.eq(-1).trigger("click")}),e.hasClass("with-timer")&&e.data("fecss-timer",setInterval(function(){e.is(":hover")||r.find(".btn-arrow.right").trigger("click")},3e3)),n.find(".item.active").size()||n.find(".item").eq(0).trigger("click")});
 $(document.body).on("click",".can-close .close-btn",function(c){c.preventDefault(),$(this).closest(".can-close").removeClass("active")});

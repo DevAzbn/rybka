@@ -1,30 +1,3 @@
-/*
-
-$(document).ready(function() {
-
-src/block/fecss/_fecss/.document-ready.js
-
-src/block/fecss/_page-loader/.document-ready.js
-
-src/block/fecss/_scrollto/.document-ready.js
-
-src/block/fecss/_arrow-slider/.document-ready.js
-
-src/block/fecss/_can-close/.document-ready.js
-
-
-
-$(window).on('resize',function(event){
-	
-	block/fecss/.fecss/.window-resize.js
-	
-}).trigger('resize');
-
-
-
-});
-
-*/
 
 $(document).ready(function() {
 	
@@ -66,6 +39,25 @@ $(document).ready(function() {
 		$('.show-chief-menu').removeClass('active');
 		$('.menu-list').hide();
 		$('.menu-desk').fadeIn('fast');
+		$(this).addClass('active');
+	});
+	
+	$(document.body).on('click.fecss', '.show-africa-info', function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$('.show-spain-info').removeClass('active');
+		$('.spain-info').hide();
+		$('.africa-info').fadeIn('fast');
+		$(this).addClass('active');
+	});
+	$('.show-africa-info').eq(0).trigger('click');
+	
+	$(document.body).on('click.fecss', '.show-spain-info', function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$('.show-africa-info').removeClass('active');
+		$('.africa-info').hide();
+		$('.spain-info').fadeIn('fast');
 		$(this).addClass('active');
 	});
 	
@@ -141,9 +133,11 @@ $(document).ready(function() {
 		})
 	});
 	
-	/*
+	
 	var clMap, opMap;
-	ymaps.ready(initYandexMap);
+	if(typeof ymaps != 'undefined') {
+		ymaps.ready(initYandexMap);
+	}
 	
 	function initYandexMap() {
 		
@@ -177,7 +171,7 @@ $(document).ready(function() {
 		}
 	
 	}
-	*/
+	
 
 [snp tpl="src/_/concat.document-ready.js" ]
 

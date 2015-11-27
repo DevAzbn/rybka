@@ -1,26 +1,14 @@
 .on-hover:hover {
 	&.scale-picture {
 		& > .picture {
-			-ms-transform:scale(1.2);
-			-moz-transform:scale(1.2);
-			-o-transform:scale(1.2);
-			-webkit-transform:scale(1.2);
 			transform:scale(1.2);
 		}
 	}
 	&.movehorizarrow {
 		&.left > .picture {
-			-ms-transform:translateX(-50%);
-			-moz-transform:translateX(-50%);
-			-o-transform:translateX(-50%);
-			-webkit-transform:translateX(-50%);
 			transform:translateX(-50%);
 		}
 		&.right > .picture {
-			-ms-transform:translateX(50%);
-			-moz-transform:translateX(50%);
-			-o-transform:translateX(50%);
-			-webkit-transform:translateX(50%);
 			transform:translateX(50%);
 		}
 	}
@@ -48,6 +36,22 @@
 				#site.bg(@c-hex-w);
 				#site.color(@c-hex-page-order-submit-bg);
 			}
+		}
+	}
+}
+
+.hover-color {
+	transition:all @trans-speed / 2 ease;
+	
+	&:hover {
+		background-color:#ecbc2d !important;
+		color:@c-hex-w !important;
+	}
+	
+	&.inv {
+		&:hover {
+			background-color:@c-hex-w !important;
+			color:#ecbc2d !important;
 		}
 	}
 }
