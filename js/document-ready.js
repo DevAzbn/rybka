@@ -172,6 +172,40 @@ $(document).ready(function() {
 	
 	}
 	
+	
+	$('.opinion-list').each(function(index){
+		var block = $(this);
+		var more = block.find('.more').eq(0);
+		var btn = more.find('a').eq(0);
+		var items = block.find('.item');
+		
+		if(items.size() > 7) {
+			
+			items.hide();
+			for(var i = 0; i < 7; i++) {
+				items.eq(i).show();
+			}
+			
+			btn.on('click.fecss', function(event){
+				event.preventDefault();
+				event.stopPropagation();
+				var hd = block.find('.item').filter(':hidden');
+				for(var i = 0; i < 5; i++) {
+					hd.eq(i).slideDown('fast');
+				}
+				hd = block.find('.item').filter(':hidden');
+				if(hd.size() == 0) {
+					more.empty().remove();
+				}
+			});
+			
+		} else {
+			
+			more.empty().remove();
+			
+		}
+	});
+	
 
 $(".arrow-slider").each(function(i){event.preventDefault();var e=$(this),t=e.find(".img-block .item"),r=(e.find(".text-content"),e.find(".title-block"),e.find(".arrow-block")),n=r.find(".point-line");t.each(function(i){$("<a/>",{"class":"item",html:'<span class="point" ></span>',href:"#image-"+i}).on("click.arrow-slider.point",function(i){console.log("click.arrow-slider.point");var e=$(this).index();n.find(".item").removeClass("active"),t.fadeOut("fast").removeClass("active"),$(this).addClass("active"),t.eq(e).fadeIn("fast").addClass("active")}).appendTo(n)}),r.on("click.arrow-slider.right",".btn-arrow.right",function(i){var e=n.find(".item"),t=e.filter(".active").eq(0).index(),r=e.eq(t).next(".item");r.size()?r.trigger("click"):e.eq(0).trigger("click")}),r.on("click.arrow-slider.left",".btn-arrow.left",function(i){var e=n.find(".item"),t=e.filter(".active").eq(0).index(),r=e.eq(t).prev(".item");r.size()?r.trigger("click"):e.eq(-1).trigger("click")}),e.hasClass("with-timer")&&e.data("fecss-timer",setInterval(function(){e.is(":hover")||r.find(".btn-arrow.right").trigger("click")},3e3)),n.find(".item.active").size()||n.find(".item").eq(0).trigger("click")});
 $(document.body).on("click",".can-close .close-btn",function(c){c.preventDefault(),$(this).closest(".can-close").removeClass("active")});

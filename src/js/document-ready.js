@@ -172,6 +172,40 @@ $(document).ready(function() {
 	
 	}
 	
+	
+	$('.opinion-list').each(function(index){
+		var block = $(this);
+		var more = block.find('.more').eq(0);
+		var btn = more.find('a').eq(0);
+		var items = block.find('.item');
+		
+		if(items.size() > 7) {
+			
+			items.hide();
+			for(var i = 0; i < 7; i++) {
+				items.eq(i).show();
+			}
+			
+			btn.on('click.fecss', function(event){
+				event.preventDefault();
+				event.stopPropagation();
+				var hd = block.find('.item').filter(':hidden');
+				for(var i = 0; i < 5; i++) {
+					hd.eq(i).slideDown('fast');
+				}
+				hd = block.find('.item').filter(':hidden');
+				if(hd.size() == 0) {
+					more.empty().remove();
+				}
+			});
+			
+		} else {
+			
+			more.empty().remove();
+			
+		}
+	});
+	
 
 [snp tpl="src/_/concat.document-ready.js" ]
 
