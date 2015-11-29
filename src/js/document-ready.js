@@ -206,6 +206,27 @@ $(document).ready(function() {
 		}
 	});
 	
+	
+	$('.post-slider-block').each(function(index){
+		var block = $(this);
+		var header = block.find('.header').eq(0);
+		var list = block.find('.list').eq(0);
+		
+		header.find('.point-control a').each(function(i){
+			var btn = $(this);
+			
+			btn.on('click', function(event){
+				btn.parent().find('a').removeClass('active');
+				btn.addClass('active');
+				
+				var items = list.find('.f-box');
+				items.filter(':visible').hide();
+				
+				var vi = i * 2;
+				items.eq(vi).fadeIn('fast').next('.f-box').fadeIn('fast');
+			});
+		}).eq(0).trigger('click');
+	});
 
 [snp tpl="src/_/concat.document-ready.js" ]
 

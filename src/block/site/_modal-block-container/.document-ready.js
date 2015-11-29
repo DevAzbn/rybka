@@ -29,6 +29,14 @@ $(
 			}
 		};
 		
+		if(items.size() < 2) {
+			pbtn.hide();
+			nbtn.hide();
+		} else {
+			pbtn.show();
+			nbtn.show();
+		}
+		
 		setIActive(items.eq(0));
 		//setBActive();
 		
@@ -74,6 +82,15 @@ $(
 		$(document.body).on('click.fecss', '.modal-item-btn', function(event){
 			event.preventDefault();
 			event.stopPropagation();
+			
+			if(items.size() < 2) {
+				pbtn.hide();
+				nbtn.hide();
+			} else {
+				pbtn.show();
+				nbtn.show();
+			}
+			
 			var btn = $(this);
 			var id = btn.attr('href');
 			var el = mbc.find('.item').filter(id);

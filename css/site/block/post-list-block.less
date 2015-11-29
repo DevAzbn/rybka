@@ -1,6 +1,53 @@
 	.post-list-block {
 		margin:4em 0;
 		
+		.header {
+			
+			.title {
+				font-family:abi;
+				#site.size(3.6em);
+				#site.color(#ecbd2d);
+			}
+			
+			.venzel-block {
+				margin:1.5em 0;
+				height:4em;
+				background-position:center center;
+				background-repeat: no-repeat;
+				background-image: url('@{url-path-img}/tpl/post-list-block-venzel-bg.png');
+				
+				a {
+					float:right;
+					line-height:3em;
+					#site.size(1.4em);
+					#site.color(#ecbc2d);
+					#site.underline(none);
+					
+					&:hover {
+						#site.underline(none);
+					}
+				}
+			}
+			
+			.point-control {
+				padding:2em 0;
+				
+				a {
+					border-radius: 50%;
+					#site.bg(#e6e6e6);
+					width:1.4em;
+					height:1.4em;
+					display:inline-block;
+					margin:0 1em;
+					
+					&.active {
+						#site.bg(#ecbc2d);
+					}
+				}
+			}
+			
+		}
+		
 		.list {
 			& > div:not(.clear) {
 				
