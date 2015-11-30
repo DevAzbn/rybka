@@ -13,6 +13,29 @@
 		background-position:center center;
 		background-repeat:no-repeat;
 		background-size:cover;
+	
+	
+	@media @media-size-xs {
+		& {
+			display:block;
+			width:100%;
+			padding:20em 0;
+		}
+	}
+	@media @media-size-sm {
+		& {
+			display:block;
+			width:100%;
+			padding:20em 0;
+		}
+	}
+	@media @media-size-md {
+		
+	}
+	@media @media-size-lg {
+		
+	}
+	
 		
 		&.club {
 			background-image:url('@{url-path-img}/tpl/mainpage-container-club-bg.jpg');
@@ -53,6 +76,25 @@
 			z-index:1;
 			position:relative;
 			
+			
+			@media @media-size-xs {
+				& {
+					#site.size(3em);
+				}
+			}
+			@media @media-size-sm {
+				& {
+					#site.size(3em);
+				}
+			}
+			@media @media-size-md {
+				
+			}
+			@media @media-size-lg {
+				
+			}
+			
+			
 			&:before {
 				content:'';
 				position:absolute;
@@ -84,6 +126,22 @@
 		#site.color(@c-hex-w);
 		z-index:1;
 		
+		@media @media-size-xs {
+			& {
+				bottom:8em;
+			}
+		}
+		@media @media-size-sm {
+			& {
+				bottom:8em;
+			}
+		}
+		@media @media-size-md {
+			
+		}
+		@media @media-size-lg {
+			
+		}
 		.adr {
 			display:inline-block;
 			#site.size(1.6em);
@@ -131,6 +189,23 @@
 		overflow-y:hidden;
 		padding-bottom:2em;
 		
+		@media @media-size-xs {
+			& {
+				display:none;
+			}
+		}
+		@media @media-size-sm {
+			& {
+				display:none;
+			}
+		}
+		@media @media-size-md {
+			
+		}
+		@media @media-size-lg {
+			
+		}
+		
 		.cntr {
 			width:100%;
 			max-width:480px;
@@ -158,6 +233,12 @@
 					font-family:gr;
 					max-width:300px;
 					margin:0.2em auto 0;
+				}
+				.adr {
+					text-align:center;
+					#site.color(@c-hex-w);
+					#site.size(1.3em);
+					margin-top:1.5em;
 				}
 			}
 			.show-menu-btn {

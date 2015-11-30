@@ -15,5 +15,6 @@ $(
 			$(this).closest('ul').find('.drd-list').slideUp('fast');
 			$(this).next('.drd-list').slideDown('fast');
 		});
+		$('.mainpage-container .drd-btn').eq(0).trigger('click');
 	}
 );

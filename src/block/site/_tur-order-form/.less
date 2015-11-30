@@ -122,12 +122,15 @@
 	}
 	
 	&.in-modal {
-		margin: 2em -5em;
+		margin: 2em -5em 0;
 		padding: 0 5em;
 		width: 100%;
 		
-		&:after {
-			content:none;
+		& > .adaptive-block {
+			padding:5em 0 0;
+			&:after {
+				content:none;
+			}
 		}
 	}
 	

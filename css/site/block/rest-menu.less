@@ -40,6 +40,28 @@
 					text-align:right;
 					padding-right:2em;
 					
+					@media @media-size-xs {
+							& {
+								padding-right:initial;
+								padding-left:2em;
+							}
+						}
+						@media @media-size-sm {
+							& {
+								padding-right:initial;
+								padding-left:2em;
+							}
+						}
+						@media @media-size-md {
+							& {
+								padding-right:initial;
+								padding-left:2em;
+							}
+						}
+						@media @media-size-lg {
+							
+						}
+					
 					.picture {
 						position:absolute;
 						left:7%;
@@ -48,15 +70,56 @@
 						height:247px;
 						background-position:center center;
 						background-image: url('@{url-path-img}/tpl/rest-menu-select-chief.png');
+						
+						@media @media-size-xs {
+							& {
+								display:none !important;
+							}
+						}
+						@media @media-size-sm {
+							& {
+								display:none !important;
+							}
+						}
+						@media @media-size-md {
+							& {
+								display:none !important;
+							}
+						}
+						@media @media-size-lg {
+							
+						}
 					}
 					.text {
-					
+						
 					}
 				}
 				&.desk {
 					text-align:left;
 					padding-right: 24em;
 					position:relative;
+					
+					@media @media-size-xs {
+							& {
+								padding-right:initial;
+								padding-left:2em;
+							}
+						}
+						@media @media-size-sm {
+							& {
+								padding-right:initial;
+								padding-left:2em;
+							}
+						}
+						@media @media-size-md {
+							& {
+								padding-right:initial;
+								padding-left:2em;
+							}
+						}
+						@media @media-size-lg {
+							
+						}
 					
 					.picture {
 						position:absolute;
@@ -66,6 +129,25 @@
 						height:207px;
 						background-position:center center;
 						background-image: url('@{url-path-img}/tpl/rest-menu-select-desk.png');
+						
+						@media @media-size-xs {
+							& {
+								display:none !important;
+							}
+						}
+						@media @media-size-sm {
+							& {
+								display:none !important;
+							}
+						}
+						@media @media-size-md {
+							& {
+								display:none !important;
+							}
+						}
+						@media @media-size-lg {
+							
+						}
 					}
 					
 				}
@@ -169,6 +251,25 @@
 			background-size:cover;
 			background-image: url('@{url-path-img}/tpl/menu-desk-bg.jpg');
 			position:relative;
+			
+			@media @media-size-xs {
+				& {
+					height:160px;
+					background-size:contain;
+				}
+			}
+			@media @media-size-sm {
+				& {
+					height:160px;
+					background-size:contain;
+				}
+			}
+			@media @media-size-md {
+				
+			}
+			@media @media-size-lg {
+				
+			}
 			
 			.or-btn {
 				position:absolute;

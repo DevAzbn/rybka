@@ -253,7 +253,13 @@ $('body').on('changeClass',function(){
 	
 	
 	[snp tpl="src/_/concat.body.changeClass.js" ]
-
+	
+	/*
+	$('meta[name="viewport"]').empty().remove();
+	if($(window).width() < 1199) {
+		$('head').append('<meta name="viewport" content="width=1199">');
+	}
+	*/
 	
 });
 
