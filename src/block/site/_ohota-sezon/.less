@@ -19,11 +19,58 @@
 		
 		.item-list {
 			.item {
+				position:relative;
+				
+				.start, .end {
+					position:absolute;
+					#site.color(#dbdbdb);
+					z-index:1;
+					left:4em;
+					
+					.day {
+						#site.size(6em);
+						#site.bold;
+						display:block;
+						font-family:gb;
+					}
+					
+					.month {
+						#site.size(1.6em);
+						display:block;
+						font-family:gb;
+					}
+				}
+				
+				.start {
+					top:4em;
+				}
+				.end {
+					top:17.5em;
+				}
+				
+				.semi {
+					position:absolute;
+					height:2%;
+					width:20px;
+					top:15em;
+					left:4em;
+					content:'';
+					#site.bg(#dbdbdb);
+					z-index:1;
+				}
+				
+				.image.resp {
+					position:relative;
+					z-index:2;
+				}
+				
 				.title {
+					position:relative;
 					#site.size(2em);
 					#site.color(#999999);
 					text-align:center;
 					margin-top:2em;
+					z-index:2;
 				}
 			}
 		}

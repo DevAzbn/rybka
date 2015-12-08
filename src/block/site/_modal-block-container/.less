@@ -42,6 +42,64 @@
 			}
 		}
 		
+		.transparent-container {
+			#site.bg(transparent);
+			padding:5em 5em 0;
+			position:relative;
+			
+			.hide-modal {
+				position:absolute;
+				right:6em;
+				top:6em;
+				width:15px;
+				height:15px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-image: url('@{url-path-img}/tpl/hide-modal.png');
+			}
+			
+			.item {
+				#site.bg(@c-hex-w);
+			}
+			
+			.opinion-scan-view {
+				min-height:40em;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-size:contain;
+				margin:3.5em;
+			}
+			.opinion-text-view {
+				#site.size(1.8em);
+				#site.color(#dbdbdb);
+				line-height:2em;
+				padding:2em;
+			}
+			
+			.modal-btn {
+				width:30px !important;
+				&.prev-item-btn {
+					top:0em !important;
+					left:0em !important;
+					background-image: url('@{url-path-img}/tpl/modal-prev-item-btn-w.png') !important;
+					height:100% !important;
+					background-position:center center !important;
+					background-repeat:no-repeat !important;
+					background-size:cover !important;
+				}
+				&.next-item-btn {
+					top:0em !important;
+					right:0em !important;
+					background-image: url('@{url-path-img}/tpl/modal-next-item-btn-w.png') !important;
+					height:100% !important;
+					background-position:center center !important;
+					background-repeat:no-repeat !important;
+					background-size:cover !important;
+				}
+			}
+		}
+		
 		.item {
 			display:none;
 			
