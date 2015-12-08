@@ -27,12 +27,12 @@ $(document).ready(function() {
 		event.preventDefault();
 		event.stopPropagation();
 		$('.show-desk-menu').removeClass('active');
-		$('.menu-desk').hide();
+		//$('.menu-desk').hide();
 		$('.menu-list').fadeIn('fast');
 		$(this).addClass('active');
 	});
 	$('.show-chief-menu').eq(0).trigger('click');
-	
+	/*
 	$(document.body).on('click.fecss', '.show-desk-menu', function(event){
 		event.preventDefault();
 		event.stopPropagation();
@@ -41,6 +41,7 @@ $(document).ready(function() {
 		$('.menu-desk').fadeIn('fast');
 		$(this).addClass('active');
 	});
+	*/
 	
 	$(document.body).on('click.fecss', '.show-africa-info', function(event){
 		event.preventDefault();

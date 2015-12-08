@@ -10,6 +10,11 @@ $(
 			var menu = $('.mainpage-container.container-menu');
 			menu.slideUp('fast');
 		});
+		$(document.body).on('click.size', '.hide-menu-logo', function(event){
+			var main = $('.mainpage-container:visible');
+			var menu = $('.mainpage-container.container-menu');
+			menu.slideUp('fast');
+		});
 		$(document.body).on('click.fecss', '.drd-btn', function(event){
 			event.preventDefault();
 			$(this).closest('ul').find('.drd-list').slideUp('fast');

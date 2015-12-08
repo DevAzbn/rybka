@@ -74,10 +74,12 @@ $(
 			mbc.removeClass('active');
 		});
 		
+		
 		wc.on('click.fecss', function(event){
-			event.preventDefault();
+			//event.preventDefault();
 			event.stopPropagation();
 		});
+		
 		
 		$(document.body).on('click.fecss', '.modal-item-btn', function(event){
 			event.preventDefault();
