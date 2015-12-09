@@ -1,6 +1,6 @@
 .sandbox {
 	
-	.center-content > & {
+	.center-content > &, &.other-content {
 		#site.color(@c-hex-post-content-block-social-color);
 		#site.size(1.6em);
 		
@@ -82,6 +82,8 @@
 				#site.bg(#ecbc2d);
 				border-bottom:none;
 				
+				
+				
 				td {
 					#site.color(@c-hex-w);
 				}
@@ -101,6 +103,15 @@
 				padding:2em 0;
 				#site.color(#333333);
 			}
+		}
+		
+		table.table tr:nth-child(1) th {
+			padding:2em 0;
+			#site.color(@c-hex-w);
+		}
+		
+		&.mb-40 {
+			margin-bottom:40px;
 		}
 		
 	}
