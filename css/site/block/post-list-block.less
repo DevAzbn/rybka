@@ -16,6 +16,23 @@
 				background-repeat: no-repeat;
 				background-image: url('@{url-path-img}/tpl/post-list-block-venzel-bg.png');
 				
+				@media @media-size-xs {
+					& {
+						height:7em;
+					}
+				}
+				@media @media-size-sm {
+					& {
+						height:6em;
+					}
+				}
+				@media @media-size-md {
+					
+				}
+				@media @media-size-lg {
+					
+				}
+				
 				a {
 					float:right;
 					line-height:3em;
@@ -54,11 +71,25 @@
 				&:nth-child(odd) {
 					.item {
 						margin-right:1.5em;
+						
+						@media @media-size-xs {
+							& {
+								margin-left:1.5em;
+							}
+						}
+						
 					}
 				}
 				&:nth-child(even) {
 					.item {
 						margin-left:1.5em;
+						
+						@media @media-size-xs {
+							& {
+								margin-right:1.5em;
+							}
+						}
+						
 					}
 				}
 				

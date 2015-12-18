@@ -1941,6 +1941,142 @@
 		margin:30em auto;
 	}
 	
+	.prud-row {
+		
+		&:first-child {
+			.imaged {
+				.cnt {
+					&:before {
+						content:none;
+					}
+					&:after {
+						content:none;
+					}
+				}
+			}
+		}
+		&:nth-child(odd) {
+			.imaged {
+				.title {
+					right:50px;
+					top:60px;
+				}
+				.cnt {
+					&:before {
+						left:-2%;
+					}
+					&:after {
+						right:100%;
+					}
+				}
+			}
+		}
+		&:nth-child(even) {
+			.imaged {
+				.title {
+					left:50px;
+					top:60px;
+				}
+				.cnt {
+					&:before {
+						right:-2%;
+					}
+					&:after {
+						left:100%;
+					}
+				}
+			}
+		}
+		&:last-child {
+			.imaged {
+				.cnt {
+					&:before {
+						content:none;
+					}
+					&:after {
+						content:none;
+					}
+				}
+			}
+		}
+		
+		.imaged {
+			position:relative;
+			overflow-x:hidden;
+			
+			.title {
+				font-family:gb;
+				#site.color(@c-hex-w);
+				#site.size(3.6em);
+				#site.bold();
+				position:absolute;
+				top:40px;
+				z-index:10;
+				text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+				
+				&.black {
+					#site.color(#E4E4E4);
+					text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+				}
+			}
+			
+			.cnt {
+				width:360px;
+				height:360px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				position:relative;
+				margin:0px auto;
+				
+				&:before {
+					content:'';
+					position:absolute;
+					top:48%;
+					border-radius:50%;
+					width:4%;
+					height:4%;
+					#site.bg(@c-hex-w);
+					
+					@media @media-size-xs {
+						& {
+							content:none;
+						}
+					}
+				}
+				&:after {
+					content:'';
+					position:absolute;
+					width:100%;
+					height:0.4%;
+					top:49.8%;
+					#site.bg(@c-hex-w);
+					
+					@media @media-size-xs {
+						& {
+							content:none;
+						}
+					}
+				}
+				
+				&.without-decor {
+					&:before, &:after {
+						content:none;
+					}
+				}
+				
+			}
+		}
+		.texted {
+			.cnt {
+				width:360px;
+				margin:30px auto 0;
+				#site.color(@c-hex-w);
+				#site.size(1.8em);
+				text-align:justify;
+			}
+		}
+	}
+	
 	.rybalka-prud-photo-btns {
 		padding:8em 0;
 		text-align:center;
@@ -2446,6 +2582,7 @@
 					background-size:contain;
 					padding-left:1em;
 					padding-right:1em;
+					padding-top:0em;
 				}
 			}
 			@media @media-size-sm {

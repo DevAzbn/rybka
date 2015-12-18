@@ -85,6 +85,13 @@
 			width:100%;
 			margin:4em auto 0em;
 			
+			@media @media-size-xs {
+				& {
+					margin-top:1em;
+					display: block;
+				}
+			}
+			
 			.phones, .logo, .adr {
 				display:table-cell;
 				vertical-align:middle;
@@ -118,6 +125,17 @@
 			.logo {
 				width:30%;
 				text-align:center;
+				
+				@media @media-size-xs {
+					& {
+						display:block;
+						width:50%;
+						margin:0 auto;
+						transform-origin:center top;
+						transform:scale(0.55);
+					}
+				}
+				
 			}
 			.adr {
 				text-align:left;

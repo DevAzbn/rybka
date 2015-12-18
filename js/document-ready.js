@@ -149,6 +149,7 @@ $(document).ready(function() {
 			}, {
 				searchControlProvider: 'yandex#search'
 			});
+			clMap.behaviors.disable('scrollZoom');
 		}
 		
 		if($('#contact-map-op').size()) {
@@ -158,7 +159,7 @@ $(document).ready(function() {
 			}, {
 				searchControlProvider: 'yandex#search'
 			});
-			
+			opMap.behaviors.disable('scrollZoom');
 			
 			var op_office = new ymaps.Placemark([55.757339, 37.544117], { //myMap.getCenter(), {
 				hintContent: 'Золотая рыбка'
