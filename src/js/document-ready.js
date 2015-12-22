@@ -229,6 +229,38 @@ $(document).ready(function() {
 			});
 		}).eq(0).trigger('click');
 	});
+	
+	
+	
+	$(document.body).on('submit', '.azbn-review-form', function(event){
+		event.preventDefault();
+		//event.stopPropagation();
+		var f = $(this);
+		
+		f.find('input[name="action"]').empty().remove();
+		$('<input/>',{
+			type:'hidden',
+			name:'action',
+			value:'azbn_review_create',
+		}).appendTo(f);
+		
+		$.post('/wp-admin/admin-ajax.php',
+			f.serialize(),
+			function(data){
+				console.log(data);
+				
+				alert('Ваш отзыв сохранен. После проверки он будет опубликован');
+				
+				f.trigger('reset');
+			}
+		);
+		
+		//return false;
+	});
+	
+	
+	
+	
 
 [snp tpl="src/_/concat.document-ready.js" ]
 

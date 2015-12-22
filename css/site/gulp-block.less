@@ -532,6 +532,23 @@
 			padding:5em 5em 0;
 			position:relative;
 			
+			@media @media-size-xs {
+				& {
+					padding:5em 0em 0;
+				}
+			}
+			@media @media-size-sm {
+				& {
+					padding:5em 1em 0;
+				}
+			}
+			@media @media-size-md {
+				
+			}
+			@media @media-size-lg {
+				
+			}
+			
 			.hide-modal {
 				position:absolute;
 				right:2em;
@@ -575,7 +592,7 @@
 			}
 			.opinion-text-view {
 				#site.size(1.8em);
-				#site.color(#dbdbdb);
+				#site.color(#696969);
 				line-height:2em;
 				padding:2em;
 			}
@@ -1543,6 +1560,282 @@
 		}
 		
 	}
+.rybalka-about-prud {
+	background-position:center center;
+	background-repeat:repeat;
+	background-image: url('@{url-path-img}/tpl/rybalka-about-prud-bg.png');
+	
+	.adaptive-block {
+		padding:8em 0 4em;
+		#site.bg(@c-hex-w);
+	}
+	
+	.fish-gal {
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-image: url('@{url-path-img}/tpl/fish-gal-bg.png');
+		margin:12em 0;
+		padding-top:6em;
+		
+					@media @media-size-xs {
+						& {
+							background-image: none;
+							margin:8em 0;
+							padding:3em 1em 0em;
+						}
+					}
+					@media @media-size-sm {
+						& {
+							background-image: none;
+							margin:8em 0;
+							padding:3em 1em 0em;
+						}
+					}
+					@media @media-size-md {
+						
+					}
+					@media @media-size-lg {
+						
+					}
+		
+		
+		.item-list {
+			.item {
+				.title {
+					#site.size(2em);
+					#site.color(#999999);
+					text-align:center;
+					margin-top:2em;
+					
+					@media @media-size-xs {
+						& {
+							margin-top:0em;
+						}
+					}
+					@media @media-size-sm {
+						& {
+							margin-top:0em;
+						}
+					}
+					@media @media-size-md {
+						
+					}
+					@media @media-size-lg {
+						
+					}
+					
+				}
+			}
+		}
+		
+		.gal-container {
+			position:relative;
+			
+			.fish-gal-btn {
+				position:absolute;
+				height:100%;
+				top:0;
+				width:2em;
+				
+				&.left {
+					left:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-left.png');
+				}
+				
+				&.right {
+					right:0;
+					background-position:center center;
+					background-image: url('@{url-path-img}/tpl/page-header-right.png');
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+.rybalka-prud-top {
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-image: url('@{url-path-img}/tpl/rybalka-prud-top-bg.png');
+	height:199px;
+}
+.rybalka-prud {
+	overflow-y:hidden;
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-image: url('@{url-path-img}/tpl/rybalka-prud-bg.jpg');
+	#site.bg(@c-hex-b);
+	
+	.list-in-prud {
+		margin:30em auto;
+	}
+	
+	.prud-row {
+		
+		&:first-child {
+			.imaged {
+				.cnt {
+					&:before {
+						content:none;
+					}
+					&:after {
+						content:none;
+					}
+				}
+			}
+		}
+		&:nth-child(odd) {
+			.imaged {
+				.title {
+					right:50px;
+					top:60px;
+				}
+				.cnt {
+					&:before {
+						left:-2%;
+					}
+					&:after {
+						right:100%;
+					}
+				}
+			}
+		}
+		&:nth-child(even) {
+			.imaged {
+				.title {
+					left:50px;
+					top:60px;
+				}
+				.cnt {
+					&:before {
+						right:-2%;
+					}
+					&:after {
+						left:100%;
+					}
+				}
+			}
+		}
+		&:last-child {
+			.imaged {
+				.cnt {
+					&:before {
+						content:none;
+					}
+					&:after {
+						content:none;
+					}
+				}
+			}
+		}
+		
+		.imaged {
+			position:relative;
+			overflow-x:hidden;
+			
+			.title {
+				font-family:gb;
+				#site.color(@c-hex-w);
+				#site.size(3.6em);
+				#site.bold();
+				position:absolute;
+				top:40px;
+				z-index:10;
+				text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+				
+				&.black {
+					#site.color(#E4E4E4);
+					text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+				}
+			}
+			
+			.cnt {
+				width:360px;
+				height:360px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				position:relative;
+				margin:0px auto;
+				
+				&:before {
+					content:'';
+					position:absolute;
+					top:48%;
+					border-radius:50%;
+					width:4%;
+					height:4%;
+					#site.bg(@c-hex-w);
+					
+					@media @media-size-xs {
+						& {
+							content:none;
+						}
+					}
+				}
+				&:after {
+					content:'';
+					position:absolute;
+					width:100%;
+					height:0.4%;
+					top:49.8%;
+					#site.bg(@c-hex-w);
+					
+					@media @media-size-xs {
+						& {
+							content:none;
+						}
+					}
+				}
+				
+				&.without-decor {
+					&:before, &:after {
+						content:none;
+					}
+				}
+				
+			}
+		}
+		.texted {
+			.cnt {
+				width:360px;
+				margin:30px auto 0;
+				#site.color(@c-hex-w);
+				#site.size(1.8em);
+				text-align:justify;
+			}
+		}
+	}
+	
+	.rybalka-prud-photo-btns {
+		padding:8em 0;
+		text-align:center;
+		
+		a {
+			display:inline-block;
+			#site.color(#337ea3);
+			#site.size(1.6em);
+			border:1px #337ea3 solid;
+			padding:1em 2em;
+			margin:1em 2em;
+			
+			&.active, &:hover {
+				#site.color(@c-hex-w);
+				border:1px @c-hex-w solid;
+			}
+		}
+	}
+}
+.rybalka.slider {
+	.img-block {
+		.item {
+			background-size: cover;
+		}
+	}
+}
 .russia-tour-tile-block {
 	background-position:center center;
 	background-repeat:repeat;
@@ -1827,282 +2120,6 @@
 	}
 	
 }
-.rybalka-about-prud {
-	background-position:center center;
-	background-repeat:repeat;
-	background-image: url('@{url-path-img}/tpl/rybalka-about-prud-bg.png');
-	
-	.adaptive-block {
-		padding:8em 0 4em;
-		#site.bg(@c-hex-w);
-	}
-	
-	.fish-gal {
-		background-position:center top;
-		background-repeat:no-repeat;
-		background-image: url('@{url-path-img}/tpl/fish-gal-bg.png');
-		margin:12em 0;
-		padding-top:6em;
-		
-					@media @media-size-xs {
-						& {
-							background-image: none;
-							margin:8em 0;
-							padding:3em 1em 0em;
-						}
-					}
-					@media @media-size-sm {
-						& {
-							background-image: none;
-							margin:8em 0;
-							padding:3em 1em 0em;
-						}
-					}
-					@media @media-size-md {
-						
-					}
-					@media @media-size-lg {
-						
-					}
-		
-		
-		.item-list {
-			.item {
-				.title {
-					#site.size(2em);
-					#site.color(#999999);
-					text-align:center;
-					margin-top:2em;
-					
-					@media @media-size-xs {
-						& {
-							margin-top:0em;
-						}
-					}
-					@media @media-size-sm {
-						& {
-							margin-top:0em;
-						}
-					}
-					@media @media-size-md {
-						
-					}
-					@media @media-size-lg {
-						
-					}
-					
-				}
-			}
-		}
-		
-		.gal-container {
-			position:relative;
-			
-			.fish-gal-btn {
-				position:absolute;
-				height:100%;
-				top:0;
-				width:2em;
-				
-				&.left {
-					left:0;
-					background-position:center center;
-					background-image: url('@{url-path-img}/tpl/page-header-left.png');
-				}
-				
-				&.right {
-					right:0;
-					background-position:center center;
-					background-image: url('@{url-path-img}/tpl/page-header-right.png');
-				}
-			}
-			
-		}
-		
-	}
-	
-}
-.rybalka-prud-top {
-	background-position:center bottom;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-image: url('@{url-path-img}/tpl/rybalka-prud-top-bg.png');
-	height:199px;
-}
-.rybalka-prud {
-	overflow-y:hidden;
-	background-position:center top;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-image: url('@{url-path-img}/tpl/rybalka-prud-bg.jpg');
-	#site.bg(@c-hex-b);
-	
-	.list-in-prud {
-		margin:30em auto;
-	}
-	
-	.prud-row {
-		
-		&:first-child {
-			.imaged {
-				.cnt {
-					&:before {
-						content:none;
-					}
-					&:after {
-						content:none;
-					}
-				}
-			}
-		}
-		&:nth-child(odd) {
-			.imaged {
-				.title {
-					right:50px;
-					top:60px;
-				}
-				.cnt {
-					&:before {
-						left:-2%;
-					}
-					&:after {
-						right:100%;
-					}
-				}
-			}
-		}
-		&:nth-child(even) {
-			.imaged {
-				.title {
-					left:50px;
-					top:60px;
-				}
-				.cnt {
-					&:before {
-						right:-2%;
-					}
-					&:after {
-						left:100%;
-					}
-				}
-			}
-		}
-		&:last-child {
-			.imaged {
-				.cnt {
-					&:before {
-						content:none;
-					}
-					&:after {
-						content:none;
-					}
-				}
-			}
-		}
-		
-		.imaged {
-			position:relative;
-			overflow-x:hidden;
-			
-			.title {
-				font-family:gb;
-				#site.color(@c-hex-w);
-				#site.size(3.6em);
-				#site.bold();
-				position:absolute;
-				top:40px;
-				z-index:10;
-				text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
-				
-				&.black {
-					#site.color(#E4E4E4);
-					text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
-				}
-			}
-			
-			.cnt {
-				width:360px;
-				height:360px;
-				background-position:center center;
-				background-repeat:no-repeat;
-				position:relative;
-				margin:0px auto;
-				
-				&:before {
-					content:'';
-					position:absolute;
-					top:48%;
-					border-radius:50%;
-					width:4%;
-					height:4%;
-					#site.bg(@c-hex-w);
-					
-					@media @media-size-xs {
-						& {
-							content:none;
-						}
-					}
-				}
-				&:after {
-					content:'';
-					position:absolute;
-					width:100%;
-					height:0.4%;
-					top:49.8%;
-					#site.bg(@c-hex-w);
-					
-					@media @media-size-xs {
-						& {
-							content:none;
-						}
-					}
-				}
-				
-				&.without-decor {
-					&:before, &:after {
-						content:none;
-					}
-				}
-				
-			}
-		}
-		.texted {
-			.cnt {
-				width:360px;
-				margin:30px auto 0;
-				#site.color(@c-hex-w);
-				#site.size(1.8em);
-				text-align:justify;
-			}
-		}
-	}
-	
-	.rybalka-prud-photo-btns {
-		padding:8em 0;
-		text-align:center;
-		
-		a {
-			display:inline-block;
-			#site.color(#337ea3);
-			#site.size(1.6em);
-			border:1px #337ea3 solid;
-			padding:1em 2em;
-			margin:1em 2em;
-			
-			&.active, &:hover {
-				#site.color(@c-hex-w);
-				border:1px @c-hex-w solid;
-			}
-		}
-	}
-}
-.rybalka.slider {
-	.img-block {
-		.item {
-			background-size: cover;
-		}
-	}
-}
 	.tur-middle-content {
 		background-position:center center;
 		background-repeat:repeat;
@@ -2339,6 +2356,23 @@
 		margin: 2em -5em 0;
 		padding: 0 5em;
 		width: 100%;
+		
+		@media @media-size-xs {
+			& {
+				margin: 2em 0em 0;
+			}
+		}
+		@media @media-size-sm {
+			& {
+				margin: 2em -1em 0;
+			}
+		}
+		@media @media-size-md {
+			
+		}
+		@media @media-size-lg {
+			
+		}
 		
 		& > .adaptive-block {
 			padding:5em 0 0;
