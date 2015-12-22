@@ -1,6 +1,18 @@
 	.page-content {
 		padding:6.5em 0em;
 		
+		@media @media-size-sm {
+			& {
+				padding:6.5em 2em;
+			}
+		}
+		
+		@media @media-size-xs {
+			& {
+				padding:6.5em 2em;
+			}
+		}
+		
 		.text-block {
 			#site.color(@c-hex-page-content-text-color);
 			#site.size(1.6em);

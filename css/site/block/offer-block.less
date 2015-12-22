@@ -20,15 +20,36 @@
 		
 		.offer-item {
 			
+			@media @media-size-sm {
+					& {
+						padding-left:1.5em;
+						padding-right:1.5em;
+					}
+				}
+				
+				@media @media-size-xs {
+					& {
+						padding-left:1.5em;
+						padding-right:1.5em;
+					}
+				}
+			
 			&.pl {
 				padding-left:1.5em;
+				
+				
+				
 			}
 			&.pr {
 				padding-right:1.5em;
+				
+				
 			}
 			&.pr.pl {
 				padding-left:0.75em;
 				padding-right:0.75em;
+				
+				
 			}
 			
 			& > .image {
@@ -72,8 +93,8 @@
 						&:before {
 							content:'';
 							position:absolute;
-							width:8px;
-							height:8px;
+							width:0.5em;
+							height:0.5em;
 							top:0.4em;
 							left:-1em;
 							border-radius:50%;
