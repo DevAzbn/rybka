@@ -1,12 +1,12 @@
 
 	$('.line-gallery').each(function(index){
-		event.preventDefault();
+		//event.preventDefault();
 		
 		var block = $(this);
 		
 		//var arrow_block = block.find('.arrow-block');
 
-		block.on('click.line-gallery.right', '.btn-arrow.right', function(event){
+		block.find('.btn-arrow.right').on('click.line-gallery.right', function(event){
 			var imgs = block.find('.img-block .item');
 			var vis = imgs.filter(':visible');
 			if(vis.size() > 1) {
@@ -17,7 +17,7 @@
 				block.find('.img-block .item').eq(0).fadeIn('fast');
 			}
 		});
-		block.on('click.line-gallery.left', '.btn-arrow.left', function(event){
+		block.find('.btn-arrow.left').on('click.line-gallery.left', function(event){
 			var imgs = block.find('.img-block .item');
 			var vis = imgs.filter(':visible');
 			if(vis.size() > 1) {

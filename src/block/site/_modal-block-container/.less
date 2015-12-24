@@ -158,7 +158,29 @@
 				white-space:nowrap;
 				text-overflow:ellipsis;
 				max-width: 713px;
+				
+				@media @media-size-xs {
+					& {
+						padding-top:1em;
+						#site.size(2em);
+						white-space:initial;
+						text-overflow:initial;
+						margin-bottom:3em;
+					}
+				}
+				
+				@media @media-size-sm {
+					& {
+						padding-top:1em;
+						#site.size(2em);
+						white-space:initial;
+						text-overflow:initial;
+						margin-bottom:3em;
+					}
+				}
+				
 			}
+			
 		}
 	}
 	

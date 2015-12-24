@@ -22,7 +22,7 @@
 				console.log('click.arrow-slider.point');
 				var i = $(this).index();
 				point_line.find('.item').removeClass('active');
-				imgs.fadeOut('fast').removeClass('active');
+				imgs.hide().removeClass('active');
 				$(this).addClass('active');
 				imgs.eq(i).fadeIn('fast').addClass('active');
 			})
@@ -35,24 +35,24 @@
 			//counter.find('.form').html(imgs.size());
 		});
 		*/
-		arrow_block.on('click.arrow-slider.right', '.btn-arrow.right', function(event){
+		arrow_block.find('.btn-arrow.right').on('click.arrow-slider.right', function(event){
 			var p = point_line.find('.item');
 			var i = p.filter('.active').eq(0).index();
 			var nxt = p.eq(i).next('.item');
 			if(nxt.size()) {
-				nxt.trigger('click');
+				nxt.trigger('click.arrow-slider');
 			} else {
-				p.eq(0).trigger('click');
+				p.eq(0).trigger('click.arrow-slider');
 			}
 		});
-		arrow_block.on('click.arrow-slider.left', '.btn-arrow.left', function(event){
+		arrow_block.find('.btn-arrow.left').on('click.arrow-slider.left', function(event){
 			var p = point_line.find('.item');
 			var i = p.filter('.active').eq(0).index();
 			var nxt = p.eq(i).prev('.item');
 			if(nxt.size()) {
-				nxt.trigger('click');
+				nxt.trigger('click.arrow-slider');
 			} else {
-				p.eq(-1).trigger('click');
+				p.eq(-1).trigger('click.arrow-slider');
 			}
 		});
 		
@@ -61,7 +61,7 @@
 				if(block.is(':hover')) {
 					
 				} else {
-					arrow_block.find('.btn-arrow.right').trigger('click');
+					arrow_block.find('.btn-arrow.right').trigger('click.arrow-slider');
 				}
 			}, 3000))
 		}
@@ -69,7 +69,7 @@
 		if(point_line.find('.item.active').size()) {
 			
 		} else {
-			point_line.find('.item').eq(0).trigger('click');
+			point_line.find('.item').eq(0).trigger('click.arrow-slider');
 		}
 		
 	});

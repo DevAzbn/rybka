@@ -85,7 +85,7 @@
 				
 				
 				td {
-					#site.color(@c-hex-w);
+					color:@c-hex-w !important;
 				}
 			}
 			
@@ -97,8 +97,14 @@
 					
 					#recreation-b7 & {
 						#site.bold(normal);
+						border-bottom:none;
 					}
 					
+				}
+				
+				#recreation-b7 & {
+					#site.color(#999);
+					border-bottom:none;
 				}
 				
 			}
@@ -108,6 +114,11 @@
 				vertical-align:center;
 				padding:2em 0;
 				#site.color(#333333);
+				
+				#recreation-b7 & {
+					#site.color(#999);
+				}
+				
 			}
 		}
 		

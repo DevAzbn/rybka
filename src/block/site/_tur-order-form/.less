@@ -1,8 +1,9 @@
 .tur-order-form {
-	overflow-x:hidden;
+	overflow:hidden;
 	background-position:center center;
 	background-repeat:repeat;
 	background-image: url('@{url-path-img}/tpl/about-main-text-bg.png'); 
+	
 	
 	.adaptive-block {
 		position:relative;
@@ -18,6 +19,20 @@
 			background-position:center center;
 			background-repeat:no-repeat;
 			background-image:url('@{url-path-img}/tpl/tur-order-form-bg.png');
+			
+			
+			@media @media-size-xs {
+				& {
+					content:none;
+				}
+			}
+			
+			@media @media-size-sm {
+				& {
+					content:none;
+				}
+			}
+			
 		}
 		
 		.title {

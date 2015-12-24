@@ -40,7 +40,7 @@
 					text-align:right;
 					padding-right:2em;
 					
-					@media @media-size-xs {
+						@media @media-size-xs {
 							& {
 								padding-right:initial;
 								padding-left:2em;
@@ -178,6 +178,12 @@
 				height:570px;
 				position:relative;
 				
+				@media @media-size-xs {
+					& {
+						height:120px;
+					}
+				}
+				
 				.title, .image {
 					position:absolute;
 					left:0;
@@ -193,6 +199,12 @@
 				.title {
 					display:table;
 					vertical-align:middle;
+					
+					@media @media-size-xs {
+						& {
+							height:100%;
+						}
+					}
 					
 					.cell {
 						height:100%;
@@ -239,6 +251,14 @@
 					}
 				}
 				
+				.image {
+					@media @media-size-xs {
+						& {
+							display:none;
+						}
+					}
+				}
+				
 				&:nth-child(odd) {
 					.title {
 						top:0;
@@ -251,6 +271,7 @@
 					.image {
 						bottom:0;
 					}
+					
 				}
 				
 				&:nth-child(even) {
@@ -265,6 +286,7 @@
 					.image {
 						top:0;
 					}
+					
 				}
 				
 			}
@@ -276,12 +298,27 @@
 			background-position:right center;
 			background-size:cover;
 			background-image: url('@{url-path-img}/tpl/hot-fish-food.jpg');
+			
+			@media @media-size-xs {
+				& {
+					height:85px;
+					background-size:contain;
+				}
+			}
 		}
 		.hot-meat-food {
 			height:285px;
 			background-position:left center;
 			background-size:cover;
 			background-image: url('@{url-path-img}/tpl/hot-meat-food.jpg');
+			
+			@media @media-size-xs {
+				& {
+					height:85px;
+					background-size:contain;
+				}
+			}
+			
 		}
 		
 		.menu-desk {
@@ -326,6 +363,20 @@
 				font-family:gb;
 				display:table;
 				vertical-align:middle;
+				
+				
+				@media @media-size-xs {
+					& {
+						
+					}
+				}
+				@media @media-size-sm {
+					& {
+						height:150px;
+						left:18.8%;
+					}
+				}
+				
 				
 				span {
 					height:100%;

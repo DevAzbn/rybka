@@ -7,6 +7,7 @@
 		.copy {
 			color: @c-hex-w;
 			#site.size(1.4em);
+			
 		}
 		
 		.dorohov {
@@ -17,5 +18,13 @@
 			
 			background-position:center center;
 			background-image: url('@{url-path-img}/tpl/madebydorohovdesign.png');
+			
+			@media @media-size-xs {
+				& {
+					width:120px;
+					background-size:contain;
+				}
+			}
+			
 		}
 	}

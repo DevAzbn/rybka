@@ -4,7 +4,7 @@ $(
 			var btn = $(this);
 			var gal_id = btn.attr('data-gal-id');
 			$('.slider.rybalka').hide();
-			$('.slider.rybalka[data-gal-id="' + gal_id + '"]').fadeIn('fast');
+			$('.slider.rybalka[data-gal-id="' + gal_id + '"]').show();
 		});
 		$('.rybalka-prud-photo-btns a').eq(0).trigger('click');
 	}

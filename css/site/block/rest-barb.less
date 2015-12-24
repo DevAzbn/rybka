@@ -1,6 +1,12 @@
 	.rest-barb {
 		height:500px;
 		
+		@media @media-size-xs {
+			& {
+				height:235px !important;
+			}
+		}
+		
 		.at-center {
 			position:absolute;
 			width:100%;
@@ -28,7 +34,8 @@
 					@media @media-size-xs {
 						& {
 							max-width:500px;
-							#site.size(0.9em);
+							#site.size(0.6em);
+							padding:0 1em;
 						}
 					}
 					@media @media-size-sm {
