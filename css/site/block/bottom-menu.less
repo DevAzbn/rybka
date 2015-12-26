@@ -1,5 +1,6 @@
 	.bottom-menu {
 		/*height:430px;*/
+		
 		padding:5em 0;
 		color: @c-hex-bottom-menu-color;
 		background: url('@{url-path-img}/tpl/bottom-menu-bg-right.png') right bottom no-repeat, url('@{url-path-img}/tpl/bottom-menu-bg-left.png') left bottom no-repeat @c-hex-bottom-menu-bg;
@@ -98,6 +99,7 @@
 			@media @media-size-sm {
 				& {
 					margin-top:4em;
+					/*font-size:10px;*/
 				}
 			}
 			
@@ -108,12 +110,22 @@
 				margin-bottom:10px;
 			}
 			.item {
-				#site.size(1.4em);
-				line-height: 2.7em;
+				line-height: 3.2em;
 				font-family:gl;
 				
 				a {
 					#site.color(@c-hex-menu-col-color);
+					
+					@media @media-size-xs {
+						& {
+							font-size:10px;
+						}
+					}
+					@media @media-size-sm {
+						& {
+							font-size:10px;
+						}
+					}
 				}
 			}
 		}

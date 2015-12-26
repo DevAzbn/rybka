@@ -791,6 +791,7 @@
 			list-style-type: none;
 			
 			li {
+				#site.size(1.6em);
 				margin:1em 0;
 				padding:0 0 0 1em;
 				background-position:0px 6px;
@@ -801,12 +802,23 @@
 		
 		&.auto {
 			background-image: url('@{url-path-img}/tpl/contact-item-auto.png');
+			#site.size(1.6em);
 		}
 		&.train {
 			background-image: url('@{url-path-img}/tpl/contact-item-train.png');
+			#site.size(1.6em);
+			
+			p {
+				#site.size(1em);
+			}
 		}
 		&.aero {
 			background-image: url('@{url-path-img}/tpl/contact-item-aero.png');
+			#site.size(1.6em);
+			
+			p {
+				#site.size(1em);
+			}
 		}
 	}
 	
@@ -1253,12 +1265,12 @@
 				
 				@media @media-size-xs {
 					& {
-						width:25em;
+						width:initial;
 					}
 				}
 				@media @media-size-sm {
 					& {
-						width:25em
+						width:initial;
 					}
 				}
 				
@@ -1558,6 +1570,10 @@
 				&.mb600px {
 					
 				}
+				
+				a span {
+					#site.size(3.6em);
+				}
 			}
 		}
 		@media @media-size-sm {
@@ -1572,6 +1588,11 @@
 				
 				&.mb600px {
 					height:700px !important;
+				}
+				
+				
+				a span {
+					#site.size(3.6em);
 				}
 			}
 		}
