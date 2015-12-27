@@ -1,8 +1,24 @@
 .sandbox {
+	font-size: 1em;
+	
+	p {
+		
+		@media @media-size-xs {
+			& {
+				font-size: 1em;
+			}
+		}
+		@media @media-size-sm {
+			& {
+				font-size: 1em;
+			}
+		}
+	}
 	
 	.center-content > &, &.other-content {
 		#site.color(@c-hex-post-content-block-social-color);
 		#site.size(1.6em);
+		padding:0 1em;
 		
 		& > h1 {
 			#site.size(1.5em);
@@ -35,10 +51,42 @@
 			}
 		}
 		
+		ul {
+			li {
+				
+				@media @media-size-xs {
+					& {
+						font-size: 1em;
+					}
+				}
+				@media @media-size-sm {
+					& {
+						font-size: 1em;
+					}
+				}
+			}
+		}
+		
 		& > ul {
 			display:block;
 			line-height: 1.5em;
 			margin:2em auto;
+			
+			li {
+				
+				@media @media-size-xs {
+					& {
+						font-size: 1.6em;
+						margin:1em auto;
+					}
+				}
+				@media @media-size-sm {
+					& {
+						font-size: 1.6em;
+						margin:1em auto;
+					}
+				}
+			}
 		}
 		
 		& > img, & > p > img, & > p > a > img {
@@ -82,8 +130,6 @@
 				#site.bg(#ecbc2d);
 				border-bottom:none;
 				
-				
-				
 				td {
 					color:@c-hex-w !important;
 				}
@@ -98,6 +144,7 @@
 					#recreation-b7 & {
 						#site.bold(normal);
 						border-bottom:none;
+						#site.size(1.3em);
 					}
 					
 				}
@@ -105,15 +152,17 @@
 				#recreation-b7 & {
 					#site.color(#999);
 					border-bottom:none;
+					#site.size(1.3em);
 				}
 				
 			}
 			
 			td {
-				text-align:center;
-				vertical-align:center;
-				padding:2em 0;
+				text-align:left;
+				vertical-align:middle;
+				padding:2em 1em;
 				#site.color(#333333);
+				#site.size(1.3em);
 				
 				#recreation-b7 & {
 					#site.color(#999);
@@ -143,6 +192,52 @@
 		
 		&:first-child {
 			margin-top:0;
+		}
+	}
+	
+}
+
+.modal-sandbox {
+	
+	.content {
+		#site.size(1em);
+		p {
+			@media @media-size-xs {
+				& {
+					#site.size(1em);
+				}
+			}
+			@media @media-size-sm {
+				& {
+					#site.size(1em);
+					}
+			}
+		}
+		
+		ul {
+			@media @media-size-xs {
+					& {
+						#site.size(1em);
+					}
+				}
+				@media @media-size-sm {
+					& {
+						#site.size(1em);
+						}
+				}
+			
+			li {
+				@media @media-size-xs {
+					& {
+						#site.size(1em);
+					}
+				}
+				@media @media-size-sm {
+					& {
+						#site.size(1em);
+						}
+				}
+			}
 		}
 	}
 	

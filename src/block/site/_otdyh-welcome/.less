@@ -7,6 +7,18 @@
 		min-height:430px;
 		position:relative;
 		
+		@media @media-size-xs {
+			& {
+				min-height:265px;
+			}
+		}
+		
+		@media @media-size-sm {
+			& {
+				min-height:320px;
+			}
+		}
+		
 		&:before {
 			content:'';
 			position:absolute;
@@ -17,6 +29,7 @@
 			background-position:center center;
 			background-repeat:no-repeat;
 			background-image: url('@{url-path-img}/tpl/otdyh-welcome-before-bg.png');
+			z-index:1;
 			
 			@media @media-size-xs {
 				& {
@@ -45,6 +58,7 @@
 			background-position:center center;
 			background-repeat:no-repeat;
 			background-image: url('@{url-path-img}/tpl/otdyh-welcome-after-bg.png');
+			z-index:1;
 			
 			@media @media-size-xs {
 				& {
@@ -72,6 +86,14 @@
 			font-family:abi;
 			#site.size(3.6em);
 			#site.color(@c-hex-about-main-text-title-color);
+			position:relative;
+			z-index:2;
+			
+			@media @media-size-xs {
+				& {
+					#site.size(2.4em);
+				}
+			}
 			
 			&.small {
 				#site.size(1em);
@@ -80,6 +102,12 @@
 			
 			.venzel {
 				margin:1em 0 1em;
+				
+				@media @media-size-xs {
+					& {
+						margin:2em 0 1em;
+					}
+				}
 			}
 		}
 		

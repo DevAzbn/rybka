@@ -1,0 +1,45 @@
+@media (max-width:767px){
+	
+	/* форма заявки на тур */
+	/*
+	.tur-order-form .adaptive-block .to-l .hint, .tur-order-form .adaptive-block .to-l .order-item-block, .tur-order-form .adaptive-block .to-r .hint, .tur-order-form .adaptive-block .to-r .order-item-block {
+		margin:3em auto;
+	}
+	*/
+	
+	/* заголовки записей */
+	/*
+	.post-list-block .item>.title a {
+		font-size: 1em;
+	}
+	*/
+	
+	/* заголовки туров в Турах России */
+	/*
+	.russia-tour-tile-block .variant.semi-small a span {
+		font-size: 3.6em;
+	}
+	*/
+	/*
+	.russia-tour-tile-block .variant .at-center .cell .title, .russia-tour-tile-block .variant .at-center .cell .list {
+		font-size:1em;
+	}
+	*/
+	
+	/* охота за рубежом */
+	/*
+	.zarohota-variants .wbig-container .africa-info .africa-short-info, .zarohota-variants .wbig-container .africa-info .africa-short-info2 {
+		background-size:cover;
+	}
+	
+	.zarohota-variants .wbig-container .spain-info .spain-short-info, .zarohota-variants .wbig-container .spain-info .spain-short-info2 {
+		background-size:cover;
+	}
+	*/
+	/*
+	body.page-id-23 .maps-block {
+		min-height:250px;
+		margin-top:36em;
+	}
+	*/
+}

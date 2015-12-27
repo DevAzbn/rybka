@@ -69,12 +69,26 @@
 		.to-l {
 			.order-item-block, .hint {
 				margin:3em auto 3em 0;
+				
+				@media @media-size-xs {
+					& {
+						margin:3em auto;
+					}
+				}
+				
 			}
 		}
 		
 		.to-r {
 			.order-item-block, .hint {
 				margin:3em 0 3em auto;
+				
+				@media @media-size-xs {
+					& {
+						margin:3em auto;
+					}
+				}
+				
 			}
 		}
 		
@@ -144,11 +158,13 @@
 		@media @media-size-xs {
 			& {
 				margin: 2em 0em 0;
+				padding: 0em;
 			}
 		}
 		@media @media-size-sm {
 			& {
-				margin: 2em -1em 0;
+				margin: 2em 0em 0;
+				padding: 0em;
 			}
 		}
 		@media @media-size-md {
