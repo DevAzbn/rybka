@@ -148,14 +148,14 @@
 		& {
 			display:block;
 			width:100%;
-			padding:20em 0;
+			padding:32em 0;
 		}
 	}
 	@media @media-size-sm {
 		& {
 			display:block;
 			width:100%;
-			padding:20em 0;
+			padding:32em 0;
 		}
 	}
 	@media @media-size-md {
@@ -848,27 +848,34 @@
 		ul {
 			margin:0;
 			padding:0;
-			list-style-type: none;
 			
 			li {
-				#site.size(1em);
+				#site.size(1.6em);
 				margin:1em 0;
 				padding:0 0 0 1em;
 				background-position:0px 6px;
 				background-repeat:no-repeat;
-				background-image: url('@{url-path-img}/tpl/contact-item-auto-variant.png');
+				/*background-image: url('@{url-path-img}/tpl/contact-item-auto-variant.png');*/
+				
+				a {
+					#site.size(1em);
+				}
 			}
 		}
 		
 		&.auto {
 			background-image: url('@{url-path-img}/tpl/contact-item-auto.png');
 			#site.size(1.6em);
+			
+			p, p a {
+				#site.size(1em);
+			}
 		}
 		&.train {
 			background-image: url('@{url-path-img}/tpl/contact-item-train.png');
 			#site.size(1.6em);
 			
-			p {
+			p, p a {
 				#site.size(1em);
 			}
 		}
@@ -876,7 +883,7 @@
 			background-image: url('@{url-path-img}/tpl/contact-item-aero.png');
 			#site.size(1.6em);
 			
-			p {
+			p, p a {
 				#site.size(1em);
 			}
 		}
@@ -3012,8 +3019,8 @@
 			
 			@media @media-size-xs {
 				& {
-					height:150px;
-					background-size:cover;
+					height:160px;
+					background-size:contain;
 				}
 			}
 			@media @media-size-sm {
@@ -3037,8 +3044,8 @@
 			
 			@media @media-size-xs {
 				& {
-					height:270px;
-					background-size:cover;
+					height:160px;
+					background-size:contain;
 				}
 			}
 			@media @media-size-sm {
@@ -3062,8 +3069,8 @@
 			
 			@media @media-size-xs {
 				& {
-					height:150px;
-					background-size:cover;
+					height:160px;
+					background-size:contain;
 				}
 			}
 			@media @media-size-sm {
@@ -3087,8 +3094,8 @@
 			
 			@media @media-size-xs {
 				& {
-					height:270px;
-					background-size:cover;
+					height:160px;
+					background-size:contain;
 				}
 			}
 			@media @media-size-sm {
